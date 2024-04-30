@@ -1,0 +1,139 @@
+*{
+ box-sizing: border-box;
+ margin: 0; 
+ padding: 0;
+}
+
+html , body{
+ height:100%;
+ width:100%;
+}
+
+.main{
+ width:100vw;
+ height:100vh;
+}
+
+.parent2{
+    width: 100vw;
+    background-color: black;
+    display:block;
+    position:relative;
+    overflow: hidden;
+}
+.Door{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.Something{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    background: #00000029;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   flex-wrap: wrap;
+   text-align: center;
+   
+}
+button{
+    width: 200px;
+    height: 70px;
+    background-color: #059393;
+    font-size: 2em;
+    font-weight: bolder;
+    border-radius: 2px;
+     border: 1px solid transparent;
+    text-shadow: 1px 1px 2px rgb(7, 138, 138);
+    box-shadow:1px 1px 10px 1px  rgb(150, 191, 193);
+    font-family: "curlz MT";
+
+}
+.botton{
+    position: relative;
+    opacity: 0;
+}
+.textAnimation{
+ display: flex;
+ width: 100%;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ padding: 2em;
+ 
+}
+.text1, .text2 , .text3 , .text4 ,.text5{
+    display: flex;
+    padding: 1em;
+}
+
+h2{
+    opacity: 0;
+    font-size:2em;
+    font-weight: bolder;
+    color: aliceblue; 
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-family: "curlz MT";
+}
+.IndideDoor{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(69, 219, 67); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    perspective: 80vh;
+    position: relative;
+  
+}
+  h1{
+    font-size:7em;
+    font-weight: bolder;
+    color: dimgray;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-family: "curlz MT";
+    position: absolute;
+}
+.leftDoor{
+width: 100vw;
+height: 100vh;
+/* background-color: rgb(99, 220, 226); */
+display: flex;
+align-items: center;
+justify-content:right;
+overflow: hidden;
+position: relative;
+}
+
+
+.rightDoor{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(99, 220, 226);
+    display:flex;
+    align-items: center;
+    justify-content:left;
+    position: relative;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:720px){
+    .leftDoor{
+        position: relative;
+        right: 2em;
+        /* width: 250vw; */
+    }
+
+    .rightDoor{
+        position: relative;
+        left: 2em;
+        /* width: 250vw; */
+    }
+    
+}

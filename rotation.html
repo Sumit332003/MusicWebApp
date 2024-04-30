@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rotation.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="parent2">
+            <div class="Door">
+      
+              <div class="Something">
+              
+                <div class="textAnimation">
+                <div class="text1">
+                  <h2>W</h2>
+                  <h2>e</h2>
+                  <h2>l</h2>
+                  <h2>c</h2>
+                  <h2>o</h2>
+                  <h2>m</h2>
+                  <h2>e</h2>
+                </div>
+                <div class="text2">
+                  <h2>t</h2>
+                  <h2>o</h2>
+                </div>
+                 
+                 <div class="text3">
+                  <h2>o</h2>
+                  <h2>u</h2>
+                  <h2>r</h2>
+                 </div>
+               <div class="text4">
+                <h2>C</h2>
+                <h2>o</h2>
+                <h2>d</h2>
+                <h2>i</h2>
+                <h2>n</h2>
+                <h2>g</h2>
+               </div>
+                <div class="text5">
+                <h2>C</h2>
+                <h2>l</h2>
+                <h2>u</h2>
+                <h2>b</h2>
+              </div>
+                </div>
+      
+                <div class="botton">
+                  <button>Get In</button>
+                </div>
+              </div>
+      
+      
+              <div class="IndideDoor">
+                
+            
+                <div class="leftDoor">
+                
+                  <img src="https://media.istockphoto.com/id/947385242/photo/wooden-texture.jpg?s=612x612&w=0&k=20&c=kyRngQYhSvDKcKD0ACjdXtdS5_9zfUrAja8bLu3q_BY=" alt="">
+                  <h1>wel</h1>
+                </div>
+      
+                <div class="rightDoor">
+                  <img src="https://media.istockphoto.com/id/947385242/photo/wooden-texture.jpg?s=612x612&w=0&k=20&c=kyRngQYhSvDKcKD0ACjdXtdS5_9zfUrAja8bLu3q_BY=" alt="">
+              
+                  <h1>come</h1>
+                </div> 
+               </div>
+            </div>
+      </div> 
+    </div>
+ 
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+ 
+        gsap.to(".leftDoor",{
+         //   delay:1,
+            transform:" rotateY(80deg)",   
+            transition:" 1.5s",
+            width: "30%",
+              })
+        gsap.to(".rightDoor",{
+          //  delay:1,
+            transform: "rotateY(-80deg)",
+            transition:" 1.5s",
+            width: "30%",
+            }) 
+  
+        
+        
+        setInterval(function(){   
+                  var finsh = gsap.timeline();
+                
+                  finsh.to("h2",{
+                    opacity:1,
+                    stagger:.2,
+                    repeat:-1,
+        
+                     }) 
+                 finsh.to("h2",{
+                  opacity:0,
+                    stagger:.2,
+                  color:"red",
+                  
+                   }) 
+        
+        
+        
+              },2000)
+
+                  gsap.to(".botton",{
+                    duration:1,
+                    opacity:1,
+                   
+                  })
+                  gsap.to(".botton",{
+                    duration:1,
+                    y:10,
+                    yoyo:true,
+                    repeat:-1,
+                  })
+        
+</script>
+</body>
+</html>

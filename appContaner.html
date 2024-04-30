@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0; 
+            padding: 0;
+           }
+           
+           html , body{
+            height:100%;
+            width:100%;
+            /* background: #31ee9c; */
+           }
+           body::-webkit-scrollbar{
+               display: none;
+           }
+           .main{
+            width:100vw;
+            /* height:100%; */
+            /* display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #057656; */
+            
+           }
+
+        
+.App_Contaner{
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display:flex;
+    align-items: center;
+    justify-content: center;    
+}
+ 
+
+.cover_Contaner{
+    height: 90vh;
+    width: 90vw;
+    background: #ffffff10;
+    overflow: scroll;
+    border-radius: 1%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.cover_Contaner::-webkit-scrollbar{
+    display: none;
+}
+.main-bar{
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+    display: flex;
+    
+}
+#main-bar-nav{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul {
+     display: flex;
+    padding: 1em;
+}
+ 
+
+li{
+    display: flex;
+    margin: 1.3em;
+    text-decoration:none;
+    color: rgb(177, 177, 177);
+    font-family: monospace;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+ li:hover{
+    color: white;
+ }
+li::selection{
+ color: #bbd8dd;
+}
+ 
+#main-bar-nav .Theam-circle{
+    
+    margin-right: 8em;
+    
+}
+ 
+.left_Contaner{
+    width: 882.3px;
+    height: 90%;
+ 
+   
+}
+
+.Header_Name{
+    height: 40px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding:0em; */
+    color: white;
+    font-family:sans-serif;
+    
+}
+.Header_Name .playBottom{
+    background-color:rgba(137, 43, 226, 0);
+    height: 30px;
+    width: 30px;
+    /* overflow: hidden; */
+}
+h1::selection{
+    background-color: #bc783400;
+    color: rgb(255, 253, 253);
+}
+h3::selection{
+    background-color: #bc783400;
+    color: rgb(255, 253, 253);
+}
+h4::selection{
+    background-color: #bc783400;
+    color: rgb(255, 253, 253);
+}
+h5::selection{
+    background-color: #bc783400;
+    color: rgb(255, 253, 253);
+}
+p::selection{
+    background-color: #bc783400;
+    color: rgb(255, 253, 253);
+}
+img::selection{
+    background-color: #bc783400;
+    color: rgb(255, 253, 253);
+}
+.bottons::selection{
+    background-color: #bc783400;
+    color: rgb(255, 253, 253);
+}
+.btns::selection{
+    background-color: #bc783400;
+    color: rgb(255, 253, 253);
+}
+h6::selection{
+    background-color: #bc783400;
+    color: rgb(255, 253, 253);
+}
+.top_leftContaner{
+height: 350px;
+width: 100%;
+display: flex;
+}
+.videos{
+    width: 100vw;
+    height: 100vh;
+   position: relative;
+}
+.overlay{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    background: #3f3e3e2a;
+    /* background:linear-gradient(to right,  rgb(21, 29, 36), rgb(12, 20, 26)); */
+        position: relative;
+        /* display: none; */
+        
+
+}
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+
+    
+}
+.left_TextContaner{
+    width: 600px;
+    height: 100%;
+    /* background-color: #b371076f; */
+    padding: 10px;
+   position: relative;
+   /* position: absolute; */
+   
+     
+
+}
+.cover_contaner{
+    height: 340px;
+ /*  background: #d4a6a6;*/
+    color: antiquewhite;
+    font-family: sans-serif;
+    overflow: hidden;
+    padding-left: 1em;
+    
+}
+h1, .someFavratesorWhat, p , .btns{
+    margin-bottom:1em ;
+}
+.someFavratesorWhat{
+    width: 270px;
+    height:23px ;
+    background-color: #ffffff36;
+
+}
+.lineDefault{
+    height:100%;
+    width: 2px;
+    background-color: rgb(57, 98, 152);
+}
+.btns{
+    display: flex;
+    align-items: center;
+    width: 145px;
+   /*  background-color: #fff; */
+    justify-content: space-between;
+    margin-top: 5em;
+}
+.playideoBtn{
+    height: 33px;
+    width: 98px;
+    background-color: rgb(80, 200, 178);
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:0px  6px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.playideoBtn .playBottom{
+    background-color: #fff;
+    color: #535353;
+    height: 27px;
+    width: 27px;
+   
+    
+}
+.right_ImageContaner{
+    width: 400px;
+    height: 100%;
+    background-color: #49818635;
+    overflow: hidden;
+    background-image: url();
+    background-size: cover;
+    
+}
+
+
+.bottom_leftContaner{
+    height: 315px;
+    width: 50%;
+  /*  background-color: #a0d100;*/
+    padding: 1.3em;
+    color: #fff;
+    font-family: sans-serif;
+}
+.bottom_leftContaner h4{
+    /* background-color: #fff; */
+    width: 100%;
+    padding: 8px;
+
+}
+.bottom_Contaner{
+    height: 90%;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    overflow-y: hidden;  
+    /* padding: 8px; */
+}
+
+.bottom_Contaner::-webkit-scrollbar{
+    display: none;
+}
+.Albume_Contaner{
+    display:flex;
+    align-items: center;
+    /* background-color: #fff; */
+    width: 100vw;
+   
+
+    
+}
+.changeContaner{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    /* background-color: #4981863c; */
+    border-radius: 20px;
+    /* overflow: hidden; */
+    
+}
+.changeContaner img{
+    border-radius: 20px;
+
+}
+.songAndArtist{
+    width: 140px;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    font-family: sans-serif;
+    /* padding: 15px; */
+    font-size: 10px;
+}
+.download{
+    height: 30px;
+    width: 30px;
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.songAndArtist h5{
+    font-size: 16px;
+}
+.songAndArtist h6{
+font-weight: 100;
+color: #e5e4e4;
+}
+/* Right Contaner For Music lists */
+
+
+
+.right_Contaner{
+    width: 500px;
+    height: 90%;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+@media screen and (max-width:720px) {
+  
+    .App_Contaner{
+     overflow: hidden;
+      /* background: linear-gradient(to right,#dadada, black); */
+      background:linear-gradient(to right,  rgb(28, 39, 49), rgb(9, 14, 18)); 
+   
+    }
+    .cover_Contaner{
+        overflow-y:scroll;
+        width: 97%;
+        height: 97%;
+        border-radius: 10%;
+    }
+
+    .main-bar{
+        overflow: scroll;
+    }
+    .left_Contaner{
+      
+        width: 412px;
+       left: 6px;
+        overflow: hidden;
+       position: relative;
+        height: 80%;
+      }
+    .top_leftContaner{
+       
+        flex-wrap: wrap;
+        width: 400px;
+    
+    }
+
+    .right_Contaner{
+        width: 412px;
+       
+    }
+    .big_Music_Contaner{
+    padding: 1em;
+    } 
+    .bottom_leftContaner{
+        background-color: blue;
+       z-index: 2;
+        width: 400px;
+        display: none;
+    }
+}
+ 
+.big_Music_Contaner{
+    height: 90%;
+    width: 400px;
+    /* background-color: rgb(199, 151, 151); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+    font-family: cursive;
+    /* font-family: forte; */
+    /* padding: 2em; */
+}
+
+
+
+.music_List_Contaner{
+    height: 75%;
+    width: 400px;
+    /* background-color: violet; */
+    border-radius: 20px;
+    padding: 10px;
+    font-family: forte;
+    color: #fff;
+    overflow-y: auto;
+    /* pointer-events: none; */
+}
+.music_List_Contaner::-webkit-scrollbar{
+    display: none;
+}
+.h4{
+position: relative;
+right: 9em;
+top: -1.2em;
+}
+ 
+.music_Box{
+    margin-top: 1em;
+    height: 70px;
+    /* background-color: rgb(80, 200, 178); */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 1em; */
+    border-radius: 10px;
+    padding: 6px;
+   
+}
+.music_Box:hover{
+    background-color: rgb(80, 200, 178);
+    color: black;
+}
+
+.leftDetails{
+    width:300px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background: #eaaeae; */
+    /* pointer-events: none; */
+}
+.leftDetails p{
+    color: rgba(251, 251, 251, 0.67);
+}
+.imgCircle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ffffff3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.SongName{
+    /* background-color: #498186; */
+    width: 225px;
+    height: 55px;
+}
+.SongName h3{
+    font-weight: 100;
+
+}
+.playBottom{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #24232323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    pointer-events: none;
+}
+/* .playBottom:hover{
+    background-color: #d84040;
+} */
+/* .play{
+    position: absolute;
+    display: none;
+} */
+ 
+.pause{
+    display: none;
+    
+}
+/* .playBottom:hover{
+    background-color: red;
+} */
+
+.play_Box{
+    height: 140px;
+    width: 96%;
+    background-color: rgba(255, 255, 255, 0.086);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+}
+.leftImageContaner{
+    height: 90px;
+    width: 90px;
+    /* background-color: #058189e2; */
+    background-image: url();
+    border-radius: 15px;
+    overflow: hidden;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+.SongContent{
+    line-height:25px;
+    /* background-color: #484343; */
+    /* color: #000; */
+    /* padding-top: 10px; */
+    
+}
+
+.line{
+    width: 200px;
+    background-color: #ffffff8a;
+    height: 3px;
+    border-radius:60% 60% 10% 10%;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    
+}
+.hoverLine{
+    height: 100%;
+    width: 70%;
+    background: linear-gradient(to right, #498186, rgb(192, 255, 255));
+    /* background-color: aqua; */
+    border-radius:60% 60% 10% 10%;
+
+}
+.bottons{
+    width: 180px;
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 4px; */
+    padding-top: 15px;
+    cursor: pointer;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="App_Contaner">
+            <div class="cover_Contaner">
+               
+              <div class="main-bar">
+            <nav id="main-bar-nav">
+                <ul>
+                    <li id="album" >Album</li>
+                    <li id="catego">Categories </li>
+                    <li id="mail">Mail</li>
+                    <li id="about">About </li>
+                    <li id="feedback" >feedback </li>
+                     
+            </ul>
+                 
+                      <div class="changBackground"><div class="Theam-circle"></div></div>
+    
+            </nav>
+                   
+              </div>
+              
+    
+                <div class="left_Contaner">
+                    <div class="Header_Name">
+                        <div class="playBottom"><h2>🎧</h2></div>
+                        <h5>Hi, User</h5>
+                    </div>
+                    <div class="top_leftContaner">
+    
+                    <!-- <div class="video_Contaner"> -->
+                        <!-- <div class="videos" style="color: aliceblue;">
+    
+                            <video poster="./imgs/diyan.png" controls muted loop>
+                                <source src="video.mp4" type="video/mp4">
+                            </video>
+                            <div class="overlay"></div>
+                        </div> -->
+                        <div class="left_TextContaner">
+                            <!-- <div class="cover_contaner">
+                                <h1>Song Name</h1>
+                                <div class="someFavratesorWhat">
+                                    <div class="lineDefault"></div>
+                                </div>
+                                <p>About songs:
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptas expedita totam eius, quos tempora ipsum quisquam, voluptate dolores ad eveniet aspernatur illo iusto odio corporis laboriosam sed quae est?
+                                </p>
+                                <div class="btns">
+                                    <div class="playideoBtn"><h5 id="vidBtn">Play Now </h5><div class="playBottom" id="playBottom">▶</div>
+                                </div>
+                                <div class="playBottom">❣️</div>
+        
+                            
+                                </div>
+                                
+                            </div> -->
+                        </div>
+                    <!-- </div> -->
+    
+                        <div class="right_ImageContaner">
+                            <div class="videos" style="color: aliceblue;">
+                            
+                                <!-- <video poster="./imgs/diyan.png" controls muted loop>
+                                    <source src="video.mp4" type="video/mp4">
+                                </video> -->
+                            </div>
+                           
+                            <!-- <img src="" alt=""> -->
+                        </div>
+                    </div>
+    
+                    <div class="bottom_leftContaner">
+                        <h4>Top Videos</h4>
+                        <div class="bottom_Contaner">
+    
+                            <!-- <div class="Albume_Contaner">
+                                
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="right_Contaner">
+                    <div class="big_Music_Contaner">
+                        <div class="h4"><h4>Play Lists</h4></div>
+                    
+                    
+                        <div class="music_List_Contaner">
+                        
+                            <!-- <div class="music_Box">
+                            <div class="leftDetails">
+                                <div class="number"><p>01</p></div>
+                                <div class="imgCircle">Img</div>
+                                <div class="SongName">
+                                    <h3>Easy om Me</h3>
+                                    <p>   Achie</p>
+                                </div>
+    
+                            </div>
+                                <div class="playBottom">
+                                    <div class="play">▶️</div>
+                                    <div class="pause">⏸</div>
+                                </div>
+                            </div> -->
+    
+                            
+                        </div>
+                        
+                        <div class="play_Box">
+                            <div class="leftImageContaner">
+                                <!-- <img src="" alt=""> -->
+                            </div>
+    
+                            <div class="SongContent">
+                                <h4></h4>
+                                <h5 style="color: rgba(251, 251, 251, 0.67);">Achie</h5>
+                                <div class="line">
+                                    <div class="hoverLine"></div>
+                                </div>
+    
+                                <div class="bottons">
+                                    <div class="leftBtn"><h1 class="backward"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M7 4C7.55228 4 8 4.44772 8 5V11.3333L18.2227 4.51823C18.4524 4.36506 18.7628 4.42714 18.916 4.65691C18.9708 4.73904 19 4.83555 19 4.93426V19.0657C19 19.3419 18.7761 19.5657 18.5 19.5657C18.4013 19.5657 18.3048 19.5365 18.2227 19.4818L8 12.6667V19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19V5C6 4.44772 6.44772 4 7 4ZM17 7.73703L10.6056 12L17 16.263V7.73703Z"></path></svg></h1></div>
+                                    <div class="PlayPauseBtn"><h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path></svg></h1></div>
+                                    <div class="rightBtn"><h1 class="forward"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M16 12.6667L5.77735 19.4818C5.54759 19.6349 5.23715 19.5729 5.08397 19.3431C5.02922 19.261 5 19.1645 5 19.0657V4.93426C5 4.65812 5.22386 4.43426 5.5 4.43426C5.59871 4.43426 5.69522 4.46348 5.77735 4.51823L16 11.3333V5C16 4.44772 16.4477 4 17 4C17.5523 4 18 4.44772 18 5V19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19V12.6667ZM7 7.73703V16.263L13.3944 12L7 7.73703Z"></path></svg></h1></div>
+                                    <div class="heart">
+                                        <!-- <a href="./Songs/HuaMain.mp3" download="HuaMain.mp3">
+                                        <h1> 💞</h1>
+                                        </a> -->
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+    </div>
+
+
+<script src="script3.js"></script>
+</body>
+</html>

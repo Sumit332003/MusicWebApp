@@ -4,164 +4,491 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Design</title>
+
+
+     <title>Design</title>
 </head>
 <body>
 <div class="main">
- <div class="App_Contaner">
-    <div class="cover_Contaner">
-        <div class="left_Contaner">
-            <div class="Header_Name">
-                <div class="playBottom"><h2>🎧</h2></div>
-                <h5>Hi, Sumit</h5>
-            </div>
-            <div class="top_leftContaner">
 
-              <!-- <div class="video_Contaner"> -->
-                <!-- <div class="videos" style="color: aliceblue;">
 
-                    <video poster="./imgs/diyan.png" controls muted loop>
-                        <source src="video.mp4" type="video/mp4">
-                    </video>
-                    <div class="overlay"></div>
-                </div> -->
-                 <div class="left_TextContaner">
-                    <!-- <div class="cover_contaner">
-                        <h1>Song Name</h1>
-                        <div class="someFavratesorWhat">
-                            <div class="lineDefault"></div>
-                        </div>
-                        <p>About songs:
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptas expedita totam eius, quos tempora ipsum quisquam, voluptate dolores ad eveniet aspernatur illo iusto odio corporis laboriosam sed quae est?
-                        </p>
-                        <div class="btns">
-                            <div class="playideoBtn"><h5 id="vidBtn">Play Now </h5><div class="playBottom" id="playBottom">▶</div>
-                        </div>
-                         <div class="playBottom">❣️</div>
- 
-                     
-                        </div>
-                        
-                       </div> -->
-                </div>
-              <!-- </div> -->
 
-                <div class="right_ImageContaner">
-                    <div class="videos" style="color: aliceblue;">
-                    
-                        <!-- <video poster="./imgs/diyan.png" controls muted loop>
-                            <source src="video.mp4" type="video/mp4">
-                        </video> -->
+ <div class="Video-Fist-Page" style="display: flex;">
+
+            <video controls muted loop autoplay>
+                <source src="fish.mp4">
+            </video>
+            <overlay-video></overlay-video>
+
+                <div class="content">
+                    <div class="centerLoginBox">
+
+                        <input type="text" value="" placeholder="Name" id="Uname" required>
+                        <input type="password" value="" placeholder="Gender" id="pass" required>
+                         <button type="button" class="btn2" id="btn" >Enjoy your songs</button>
+
                     </div>
-                    <!-- <img src="" alt=""> -->
+                </div>
+    </div>
+
+
+<!-- homeMobileViewPagge -->
+<div class="mobileView" style="display:none;">
+    <div class="center-view">
+        <div class="centerBOX">
+            <div class="leftText">
+                <!-- <h5>Lorem ipsum dolor,xcbxcxcx </h5> -->
+            </div>
+            <div class="rightText">
+           <div class="hed">
+            <h1></h1>
+           </div>
+               
+                
+                <h5>
+                    
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis molestias nihil ducimus reiciendis facere provident, cumque quas necessitatibus aliquid id.
+                </h5>
+
+                <div class="enter-bttn">
+                    <h3>enjoy</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-view">
+     <div class="boxe">
+        <div class="home">
+            <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34"  fill="#047892"><path d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z"></path></svg>
+
+
+        </div>
+        <div class="music">
+            <svg id="music" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="34" fill="#b40a76" viewBox="0 0 24 24" width="34" focusable="false" style="pointer-events:block; display: block; width: 100%; height: 100%;"><path d="M12 4v9.38c-.73-.84-1.8-1.38-3-1.38-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V8h6V4h-7zM9 19c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm9-12h-5V5h5v2z"></path></svg>
+        </div>
+        <div class="fill-video" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="34" viewBox="0 0 24 24" width="34" fill="#b4a00a" focusable="false" style="pointer-events: block; display: block; width: 100%; height: 100%;"><path d="m10 8 6 4-6 4V8zm11-5v18H3V3h18zm-1 1H4v16h16V4z"></path></svg>
+        </div>
+     </div>
+    </div>
+</div>
+
+
+<!-- THIS IS A MAIN MUSIC PAGE -->
+    <div class="App_Contaner" style="display:none;">
+        <div class="cover_Contaner">
+          <div class="main-bar">
+        <nav id="main-bar-nav">
+            <ul>
+                <li id="album" >Album</li>
+                <li id="catego">Categories </li>
+                <li id="mail">On Request</li>
+                <li id="about" onclick="aboutFun()">About </li>
+                <!-- <li id="feedback" >feedback </li> -->
+
+        </ul>
+
+         <div class="changBackground"><div class="Theam-circle Theam-circle1" ></div></div>
+
+        </nav>
+
+          </div>
+
+
+            <div class="left_Contaner">
+                <div class="Header_Name">
+                    <div class="playBottom"><h2>🎧</h2></div>
+                    <h5>Hi, User</h5>
+                </div>
+                <div class="top_leftContaner">
+
+                <!-- <div class="video_Contaner"> -->
+                    <!-- <div class="videos" style="color: aliceblue;">
+
+                        <video poster="./imgs/diyan.png" controls muted loop>
+                            <source src="video.mp4" type="video/mp4">
+                        </video>
+                        <div class="overlay"></div>
+                    </div> -->
+                    <div class="left_TextContaner">
+                        <!-- <div class="cover_contaner">
+                            <h1>Song Name</h1>
+                            <div class="someFavratesorWhat">
+                                <div class="lineDefault"></div>
+                            </div>
+                            <p>About songs:
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptas expedita totam eius, quos tempora ipsum quisquam, voluptate dolores ad eveniet aspernatur illo iusto odio corporis laboriosam sed quae est?
+                            </p>
+                            <div class="btns">
+                                <div class="playideoBtn"><h5 id="vidBtn">Play Now </h5><div class="playBottom" id="playBottom">▶</div>
+                            </div>
+                            <div class="playBottom">❣️</div>
+    
+                        
+                            </div>
+                            
+                        </div> -->
+                    </div>
+                <!-- </div> -->
+
+                    <div class="right_ImageContaner">
+                        <div class="videos" style="color: aliceblue;">
+                        
+                            <!-- <video poster="./imgs/diyan.png" controls muted loop>
+                                <source src="video.mp4" type="video/mp4">
+                            </video> -->
+                        </div>
+                        <!-- <img src="" alt=""> -->
+                    </div>
+                </div>
+
+                <div class="bottom_leftContaner">
+                    <h4>Top Videos</h4>
+                    <div class="bottom_Contaner">
+
+                        <!-- <div class="Albume_Contaner">
+                            
+                        </div> -->
+                    </div>
                 </div>
             </div>
 
-            <div class="bottom_leftContaner">
-                <h4>Top Videos</h4>
-                <div class="bottom_Contaner">
+            <div class="right_Contaner">
+                <div class="big_Music_Contaner">
+                    <div class="h4"><h4>Play Lists</h4></div>
+                
+                
+                    <div class="music_List_Contaner">
+                    
+                        <!-- <div class="music_Box">
+                        <div class="leftDetails">
+                            <div class="number"><p>01</p></div>
+                            <div class="imgCircle">Img</div>
+                            <div class="SongName">
+                                <h3>Easy om Me</h3>
+                                <p>   Achie</p>
+                            </div>
 
-                    <div class="Albume_Contaner">
-                        <!-- <div class="" id="changeContaner">
-                            <img src="./imgs/img4.jpg" alt="">
-                            <div class="songAndArtist">
-                                <div class="nameSon">
-                                    <h5>Hua hai</h5>
-                                <h6 >Arjit Singh</h6>
-                                </div>
-                                <div class="download">
-                                 <h2>⬇</h2>
-                                </div>
+                        </div>
+                            <div class="playBottom">
+                                <div class="play">▶️</div>
+                                <div class="pause">⏸</div>
                             </div>
                         </div> -->
 
-
-                        <!-- <div class="leftImageContaner" id="changeContaner">
-                            <img src="" alt="">
-                        </div>
-                        <div class="leftImageContaner" id="changeContaner">
-                            <img src="" alt="">
-                        </div>
-                        <div class="leftImageContaner" id="changeContaner">
-                            <img src="" alt="">
-                        </div>
-                        <div class="leftImageContaner" id="changeContaner">
-                            <img src="" alt="">
+                        
+                    </div>
+                    
+                    <div class="play_Box">
+                        <div class="leftImageContaner">
+                            <!-- <img src="" alt=""> -->
                         </div>
 
-                        <div class="leftImageContaner" id="changeContaner">
-                            <img src="" alt="">
+                        <div class="SongContent">
+                            <h4></h4>
+                            <h5 style="color: rgba(251, 251, 251, 0.67);">Achie</h5>
+                            <div class="line">
+                                <div class="hoverLine"></div>
+                            </div>
+
+                            <div class="bottons">
+                                <div class="leftBtn"><h1 class="backward"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M7 4C7.55228 4 8 4.44772 8 5V11.3333L18.2227 4.51823C18.4524 4.36506 18.7628 4.42714 18.916 4.65691C18.9708 4.73904 19 4.83555 19 4.93426V19.0657C19 19.3419 18.7761 19.5657 18.5 19.5657C18.4013 19.5657 18.3048 19.5365 18.2227 19.4818L8 12.6667V19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19V5C6 4.44772 6.44772 4 7 4ZM17 7.73703L10.6056 12L17 16.263V7.73703Z"></path></svg></h1></div>
+                                <div class="PlayPauseBtn"><h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path></svg></h1></div>
+                                <div class="rightBtn"><h1 class="forward"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M16 12.6667L5.77735 19.4818C5.54759 19.6349 5.23715 19.5729 5.08397 19.3431C5.02922 19.261 5 19.1645 5 19.0657V4.93426C5 4.65812 5.22386 4.43426 5.5 4.43426C5.59871 4.43426 5.69522 4.46348 5.77735 4.51823L16 11.3333V5C16 4.44772 16.4477 4 17 4C17.5523 4 18 4.44772 18 5V19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19V12.6667ZM7 7.73703V16.263L13.3944 12L7 7.73703Z"></path></svg></h1></div>
+                                <div class="heart">
+                                    <!-- <a href="./Songs/HuaMain.mp3" download="HuaMain.mp3">
+                                    <h1> 💞</h1>
+                                    </a> -->
+                                </div>
+                            </div>
                         </div>
-                        <div class="leftImageContaner" id="changeContaner">
-                            <img src="" alt="">
-                        </div> 
-                        <div class="leftImageContaner" id="changeContaner">
-                            <img src="" alt="">
-                        </div> -->
+
                     </div>
                 </div>
             </div>
         </div>
 
-       <div class="right_Contaner">
-          <div class="big_Music_Contaner">
-            <div class="h4"><h4>Play Lists</h4></div>
-           
-           
-            <div class="music_List_Contaner">
-               
-                <!-- <div class="music_Box">
-                   <div class="leftDetails">
-                    <div class="number"><p>01</p></div>
-                    <div class="imgCircle">Img</div>
-                    <div class="SongName">
-                        <h3>Easy om Me</h3>
-                        <p>   Achie</p>
-                    </div>
-
-                   </div>
-                    <div class="playBottom">
-                        <div class="play">▶️</div>
-                        <div class="pause">⏸</div>
-                    </div>
-                </div> -->
-
-                   
-            </div>
-            
-            <div class="play_Box">
-                <div class="leftImageContaner">
-                    <!-- <img src="" alt=""> -->
-                </div>
-
-                <div class="SongContent">
-                    <h4></h4>
-                    <h5 style="color: rgba(251, 251, 251, 0.67);">Achie</h5>
-                    <div class="line">
-                        <div class="hoverLine"></div>
-                    </div>
-
-                    <div class="bottons">
-                        <div class="leftBtn"><h1 class="backward">👈🏻</h1></div>
-                        <div class="PlayPauseBtn"><h1>▶️</h1></div>
-                        <div class="rightBtn"><h1 class="forward">👉🏻</h1></div>
-                        <div class="heart">
-                            <!-- <a href="./Songs/HuaMain.mp3" download="HuaMain.mp3">
-                               <h1> 💞</h1>
-                            </a> -->
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-          </div>
-       </div>
     </div>
 
- </div>
+
+<!-- THIS IS A THIRD PAGE, WHERE ALBUME WII BE -->
+<div id="albumPage">
+    <div class="GlassMorphism-Page">
+        <div class="headBar-box">
+            <div class="home"><svg id="Home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z"></path></svg></div>
+            <div class="search-Bar"><input type="search" name="" placeholder="Search here" id="search-Bar"></div>
+            <div class="changBackground"><div class="Theam-circle Theam-circle2"></div></div>
+        </div>
+        <div class="bodyCover">
+            <!-- <div class="card-Contaner">
+                <div class="top-Img-contaner">
+                    <div class="image-contaner">
+                        <img src="vidImg.jpg" alt="">
+                    </div>
+                    <div class="top-Img-contaner_Overlay">
+                        <h1>Romantic</h1>
+                        <h1>song</h1>
+                        <p>Ft. a.....rman</p>
+                    </div>
+                </div>
+
+                <div class="bottom-play-contaner">
+                    <div class="play-circle-btn">Enter</div>
+                </div>
+            </div> -->
+ 
+
+
+        </div>
+    </div>
+</div>
+
+
+<!--ALBUME PAGES SONG DISPLAY-->
+<div class="Display-songs-contaner" id="Display-songs-contaner" style="display:none;">
+    <div class="head-bar">
+        <nav>
+            <ul>
+                <li><div id="HOME" class="home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z"></path></svg></div>
+                </li>
+            </ul>
+            <ul id="ul">
+                <li id="love">Love</li>
+                <li id="sad"> Sad </li>
+                <li id="crazy"> Crazy </li>
+                <li id="loveenergy">Love Energy</li>
+                <li id="feel"> Feel </li>
+                <li id="hot"> Hot </li>
+            </ul>
+            <ul>  
+                <div class="changBackground"><div class="Theam-circle Theam-circle3"></div></div>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="songs-contaneer-display" id="songs-contaneer-displayONE">
+
+
+
+        <div class="left-album-contaner">
+            <img src="" alt="">
+            <div class="img-overlay"></div>
+
+        </div>
+
+        <div class="right-songalbumlist-contaner">
+            <div class="top-sonts-contaner" id="top-sonts-contaner">
+
+           </div>
+            <div class="bottom-musicPlay-contaner">
+                <div class="left-backword left-backwordOne"><h2>Back</h2></div>
+                <div class="pause-play-btn pause-play-btnOne"><h2>Start</h2></div>
+                <div class="right-forword right-forwordOne"><h2>Forword</h2></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="songs-contaneer-display" id="songs-contaneer-displayTWO">
+        
+
+
+        <div class="left-album-contaner left-album-contanerTwo">
+            <img src="" alt="">
+            <div class="img-overlay"></div>
+           
+        </div>
+
+        <div class="right-songalbumlist-contaner">
+            <div id="top-sonts-contanerTwo">
+
+           </div>
+            <div class="bottom-musicPlay-contaner">
+                <div class="left-backword left-backwordTwo"><h2>Back</h2></div>
+                <div class="pause-play-btn pause-play-btnTwo"><h2>Start</h2></div>
+                <div class="right-forword right-forwordTwo"><h2>Forword</h2></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="songs-contaneer-display" id="songs-contaneer-displayTHREE">
+        <div class="left-album-contaner left-album-contanerThr">
+            <img src="" alt="">
+            <div class="img-overlay"></div>
+        </div>
+
+        <div class="right-songalbumlist-contaner">
+            <div id="top-sonts-contanerThr">
+
+           </div>
+            <div class="bottom-musicPlay-contaner">
+                <div class="left-backword left-backwordThr"><h2>Back</h2></div>
+                <div class="pause-play-btn pause-play-btnThr"><h2>Start</h2></div>
+                <div class="right-forword right-forwordThr"><h2>Forword</h2></div>
+            </div>
+        </div>
+    </div>
+    <div class="songs-contaneer-display" id="songs-contaneer-displayFOUR">
+        <div class="left-album-contaner left-album-contanerFour">
+            <img src="" alt="">
+            <div class="img-overlay"></div>
+        </div>
+
+        <div class="right-songalbumlist-contaner">
+            <div id="top-sonts-contanerFour">
+
+           </div>
+            <div class="bottom-musicPlay-contaner">
+                <div class="left-backword left-backwordFour"><h2>Back</h2></div>
+                <div class="pause-play-btn pause-play-btnFour"><h2>Start</h2></div>
+                <div class="right-forword right-forwordFour"><h2>Forword</h2></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="songs-contaneer-display" id="songs-contaneer-displayFIVE">
+        <div class="left-album-contaner left-album-contanerFive">
+            <img src="" alt="">
+            <div class="img-overlay"></div>
+        </div>
+
+        <div class="right-songalbumlist-contaner">
+            <div id="top-sonts-contanerFive">
+
+           </div>
+            <div class="bottom-musicPlay-contaner">
+                <div class="left-backword left-backwordFive"><h2>Back</h2></div>
+                <div class="pause-play-btn pause-play-btnFive"><h2>Start</h2></div>
+                <div class="right-forword right-forwordFive"><h2>Forword</h2></div>
+            </div>
+        </div>
+ 
+    </div>
+
+    <div class="songs-contaneer-display" id="songs-contaneer-displaySIX">
+          
+       
+
+
+        <div class="left-album-contaner left-album-contanerSix">
+            <img src="" alt="">
+            <div class="img-overlay"></div>
+           
+        </div>
+
+        <div class="right-songalbumlist-contaner">
+            <div id="top-sonts-contanerSix">
+
+           </div>
+            <div class="bottom-musicPlay-contaner">
+                <div class="left-backword left-backwordSix"><h2>Back</h2></div>
+                <div class="pause-play-btn pause-play-btnSix"><h2>Start</h2></div>
+                <div class="right-forword right-forwordSix"><h2>Forword</h2></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--MAIL BOX PAGES-->
+<div class="Mail-page" >
+    <div class="bar">
+        <div class="left-back">
+            <div class="home"><svg id="Home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z"></path></svg></div>
+
+        </div>
+        <div class="right-oerslid Theam-circle4">
+
+        </div>
+    </div>
+
+    <div class="on-requestAdded">
+         <h1 style="padding-left: 13px;">Recent Added</h1>
+         <div class="on-requesrSong-contaner">
+            <div class="onRequest-song">
+              <div class="left-part">
+                    <div class="imgIcon"></div>
+                    <div class="song-names"><h2>hello</h2></div>
+                
+              </div>
+              <div class="right-part">
+                <div class="play_pause-btn">
+                    <div class="playe">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path></svg>
+
+                    </div>
+                    <div class="pausee">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM9 9H11V15H9V9ZM13 9H15V15H13V9Z"></path></svg>
+
+                    </div>
+               </div>
+               <div class="down"><a href="./Songs/Aarzoo.mp3" download="Aarzoo.mp3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white"><path d="M4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19ZM14 9H19L12 16L5 9H10V3H14V9Z"></path></svg></a>
+               </div>
+         
+              </div>
+            
+            </div>
+            <!-- <div class="onRequest-song"></div>
+            <div class="onRequest-song"></div>
+            <div class="onRequest-song"></div>
+            <div class="onRequest-song"></div>
+            <div class="onRequest-song"></div>
+            <div class="onRequest-song"></div>
+            <div class="onRequest-song"></div>
+            <div class="onRequest-song"></div> -->
+
+            
+        </div>
+    </div>
+    <div class="mail-box">
+        <div class="center-box">
+            <input class="cornerDesign" type="text" name="text" placeholder="Name" value="" id="fullName" required>
+            <input class="cornerDesign" type="mail" name="email" placeholder="abc@gmail.com" value="" id="email_id" required>
+            <input class="cornerDesign" type="text" placeholder="SongName" id="songName"><br> <br>
+            <textarea class="cornerDesign"   placeholder="Feedback here..." id="message"></textarea>
+            <button class="cornerDesign" id="send" onclick="SendMail()">Send</button>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="AboutPage" style="display:none;height: 100vh; width:100vw; background-color:black; color:whitesmoke;  align-items:center; justify-content:center">
+
+    <div onclick="backfromAboutpg()" class="formAboutBack" style="height: 80vh;width: 10vw;background-color:transparent">
+        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34"  fill="#fff"><path d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z"></path></svg>
+
+
+    </div>
+    <div class="middle-content">
+        <h1>About</h1>
+        <p id="hello" style="font-size: 1.2em;line-height:1.5em;">Hello,i'm Sumit Agrawal who create this "Music Web App" , it's my project which help me to making logics and complex stuffs  and also  help me to understand how to make/create  multiple pages website in a one page 
+                it was complexing  task for me to create that webApp in a one page . and the big thing happened for making responsive means for mobile-phone, because user will not only visit only with laptop or desktop they will also want to visit with phone because every one do not used laptop ,
+                so it's need to make as well as responsie . So,  here comes the big  stuff problems to make exect mobile viewport  but  lots of practices help me to make easily responsive.
+                yeah, it's not fully completed it has lots of glitch it was  very complex so yap! i'm working on it. 
+
+
+        </p>
+    </div>
 </div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> 
 <script src="script3.js"></script>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init("GWEhlwVuYwuqZBSuH");
+})();
+</script>
 </body>
 </html>

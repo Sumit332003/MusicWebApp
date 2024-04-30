@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <!-- <div class="song" id="song1">
+        <button class="play">Play</button>
+        <button class="pause" style="display: none;">Pause</button>
+    </div>
+
+
+    <div class="song" id="song2">
+        <button class="play">Play</button>
+        <button class="pause" style="display: none;">Pause</button>
+   
+    </div>
+
+    
+    <div class="song" id="song3">
+        <button class="play">Play</button>
+        <button class="pause" style="display: none;">Pause</button>
+   
+    </div> -->
+    
+
+    <div class="playBottom" id="playBottom1">
+        <div class="play">    
+            play  
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path></svg> -->
+        </div>
+        <div class="pause" style="display: none;">                
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM9 9H11V15H9V9ZM13 9H15V15H13V9Z"></path></svg> -->
+    pause 
+    </div>
+      </div>
+
+      <div class="playBottom" id="playBottom2">
+        <div class="play">      
+         play
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path></svg> -->
+        </div>
+        <div class="pause" style="display: none;">                
+        pause
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM9 9H11V15H9V9ZM13 9H15V15H13V9Z"></path></svg> -->
+        </div>
+      </div>
+
+    <script>
+
+        const playBottom = document.querySelectorAll(".playBottom");
+
+        playBottom.forEach(function(playBottom){
+            var playtbtn = playBottom.querySelectorAll(".play");
+            var pausebtn = playBottom.querySelectorAll(".pause");
+
+            playtbtn.addEventListener("click", function(){
+                document.querySelectorAll(".pause").forEach(function(btnn){
+                    btnn.style.display="none";
+                })
+                pausebtn.style.display="inline-block";
+            })
+        })
+   
+   
+        function abk(){
+
+        
+        const song = document.querySelectorAll(".song");
+         song.forEach(function(song){
+        var playButton =  song.querySelector(".play");
+        var pauseButton =  song.querySelector(".pause");
+        playButton.addEventListener("click", function(){
+            document.querySelectorAll(".pause").forEach(function(btn){
+                btn.style.display="none";
+
+            })
+            pauseButton.style.display="inline-block";
+
+        })
+
+    })
+}
+//abk();
+
+    </script>
+</body>
+</html>
