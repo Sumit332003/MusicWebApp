@@ -1,3 +1,5 @@
+ <!-- win +ctrl+shift+B -->
+
  
 <!DOCTYPE html>
 <html lang="en">
@@ -15,14 +17,14 @@
 
 
 
- <div class="Video-Fist-Page" style="display: flex;">
+ <div class="Video-Fist-Page">
 
             <video controls muted loop autoplay>
                 <source src="fish.mp4">
             </video>
             <overlay-video></overlay-video>
 
-                <div class="content">
+                <!-- <div class="content">
                     <div class="centerLoginBox">
 
                         <input type="text" value="" placeholder="Name" id="Uname" required>
@@ -30,29 +32,43 @@
                          <button type="button" class="btn2" id="btn" >Enjoy your songs</button>
 
                     </div>
-                </div>
+                </div> -->
     </div>
 
 
 <!-- homeMobileViewPagge -->
-<div class="mobileView" style="display:none;">
+<div class="mobileView">
     <div class="center-view">
         <div class="centerBOX">
-            <div class="leftText">
-                <!-- <h5>Lorem ipsum dolor,xcbxcxcx </h5> -->
-            </div>
+            <!-- <div class="leftText">
+                <h5>Lorem ipsum dolor,xcbxcxcx </h5>
+            </div> -->
             <div class="rightText">
+
            <div class="hed">
-            <h1></h1>
+            <h1>
+                <div class="h1 right">melody</div>
+                <div class="h1 left">music</div>
+             <!-- <marquee behavior="20" direction="">   Welcome </marquee> -->
+                <!-- <marquee behavior="" scrollamount="20" direction="left">Welcome to music web app</marquee> -->
+            </h1>
            </div>
                
                 
-                <h5>
-                    
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis molestias nihil ducimus reiciendis facere provident, cumque quas necessitatibus aliquid id.
-                </h5>
+           <div class="content">
+            <div class="centerLoginBox">
 
-                <div class="enter-bttn">
+                <input type="text" value="" placeholder="Name" id="Uname" required>
+                <input type="password" value="" placeholder="Password" id="pass" required>
+                 <!-- <button type="button" class="btn2" id="btn" >Enjoy your songs</button> -->
+
+            </div>
+        </div>
+                <!-- <h5>
+    Here you will get music's and videos                    
+                </h5> -->
+
+                <div class="enter-bttn"id="btn">
                     <h3>enjoy</h3>
                 </div>
             </div>
@@ -78,7 +94,7 @@
 
 
 <!-- THIS IS A MAIN MUSIC PAGE -->
-    <div class="App_Contaner" style="display:none;">
+    <div class="App_Contaner" >
         <div class="cover_Contaner">
           <div class="main-bar">
         <nav id="main-bar-nav">
@@ -91,7 +107,7 @@
 
         </ul>
 
-         <div class="changBackground"><div class="Theam-circle Theam-circle1" ></div></div>
+         <!-- <div class="changBackground"><div class="Theam-circle Theam-circle1" ></div></div> -->
 
         </nav>
 
@@ -105,14 +121,7 @@
                 </div>
                 <div class="top_leftContaner">
 
-                <!-- <div class="video_Contaner"> -->
-                    <!-- <div class="videos" style="color: aliceblue;">
-
-                        <video poster="./imgs/diyan.png" controls muted loop>
-                            <source src="video.mp4" type="video/mp4">
-                        </video>
-                        <div class="overlay"></div>
-                    </div> -->
+                
                     <div class="left_TextContaner">
                         <!-- <div class="cover_contaner">
                             <h1>Song Name</h1>
@@ -132,7 +141,7 @@
                             
                         </div> -->
                     </div>
-                <!-- </div> -->
+               
 
                     <div class="right_ImageContaner">
                         <div class="videos" style="color: aliceblue;">
@@ -184,8 +193,7 @@
                     
                     <div class="play_Box">
                         <div class="leftImageContaner">
-                            <!-- <img src="" alt=""> -->
-                        </div>
+                         </div>
 
                         <div class="SongContent">
                             <h4></h4>
@@ -199,9 +207,7 @@
                                 <div class="PlayPauseBtn"><h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path></svg></h1></div>
                                 <div class="rightBtn"><h1 class="forward"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M16 12.6667L5.77735 19.4818C5.54759 19.6349 5.23715 19.5729 5.08397 19.3431C5.02922 19.261 5 19.1645 5 19.0657V4.93426C5 4.65812 5.22386 4.43426 5.5 4.43426C5.59871 4.43426 5.69522 4.46348 5.77735 4.51823L16 11.3333V5C16 4.44772 16.4477 4 17 4C17.5523 4 18 4.44772 18 5V19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19V12.6667ZM7 7.73703V16.263L13.3944 12L7 7.73703Z"></path></svg></h1></div>
                                 <div class="heart">
-                                    <!-- <a href="./Songs/HuaMain.mp3" download="HuaMain.mp3">
-                                    <h1> 💞</h1>
-                                    </a> -->
+                                   
                                 </div>
                             </div>
                         </div>
@@ -248,24 +254,27 @@
 
 
 <!--ALBUME PAGES SONG DISPLAY-->
-<div class="Display-songs-contaner" id="Display-songs-contaner" style="display:none;">
+<div class="Display-songs-contaner" id="Display-songs-contaner">
     <div class="head-bar">
         <nav>
-            <ul>
+            <ul id="catHiome">
                 <li><div id="HOME" class="home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z"></path></svg></div>
                 </li>
             </ul>
             <ul id="ul">
-                <li id="love">Love</li>
-                <li id="sad"> Sad </li>
-                <li id="crazy"> Crazy </li>
-                <li id="loveenergy">Love Energy</li>
-                <li id="feel"> Feel </li>
-                <li id="hot"> Hot </li>
-            </ul>
-            <ul>  
+                
+                    <li id="love">Romantic</li>
+                    <li id="sad"> Sad </li>
+                    <li id="crazy">Rock</li>
+                    <li id="loveenergy">Remix</li>
+                    <li id="feel">Relax</li>
+                    <li id="hot">English</li>
+             
+                
+                </ul>
+            <!-- <ul>  
                 <div class="changBackground"><div class="Theam-circle Theam-circle3"></div></div>
-            </ul>
+            </ul> -->
         </nav>
     </div>
 
@@ -284,12 +293,14 @@
 
            </div>
             <div class="bottom-musicPlay-contaner">
-                <div class="left-backword left-backwordOne"><h2>Back</h2></div>
-                <div class="pause-play-btn pause-play-btnOne"><h2>Start</h2></div>
-                <div class="right-forword right-forwordOne"><h2>Forword</h2></div>
+                <div class="left-backword left-backwordOne"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M7 4C7.55228 4 8 4.44772 8 5V11.3333L18.2227 4.51823C18.4524 4.36506 18.7628 4.42714 18.916 4.65691C18.9708 4.73904 19 4.83555 19 4.93426V19.0657C19 19.3419 18.7761 19.5657 18.5 19.5657C18.4013 19.5657 18.3048 19.5365 18.2227 19.4818L8 12.6667V19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19V5C6 4.44772 6.44772 4 7 4ZM17 7.73703L10.6056 12L17 16.263V7.73703Z"></path></svg></h2></div>
+                <div class="pause-play-btn pause-play-btnOne"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path></svg></h2></div>
+                <div class="right-forword right-forwordOne"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M16 12.6667L5.77735 19.4818C5.54759 19.6349 5.23715 19.5729 5.08397 19.3431C5.02922 19.261 5 19.1645 5 19.0657V4.93426C5 4.65812 5.22386 4.43426 5.5 4.43426C5.59871 4.43426 5.69522 4.46348 5.77735 4.51823L16 11.3333V5C16 4.44772 16.4477 4 17 4C17.5523 4 18 4.44772 18 5V19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19V12.6667ZM7 7.73703V16.263L13.3944 12L7 7.73703Z"></path></svg></h2></div>
             </div>
         </div>
     </div>
+
+
 
     <div class="songs-contaneer-display" id="songs-contaneer-displayTWO">
         
@@ -302,13 +313,13 @@
         </div>
 
         <div class="right-songalbumlist-contaner">
-            <div id="top-sonts-contanerTwo">
+            <div class="top-sonts-contaner" id="top-sonts-contanerTwo">
 
            </div>
-            <div class="bottom-musicPlay-contaner">
-                <div class="left-backword left-backwordTwo"><h2>Back</h2></div>
-                <div class="pause-play-btn pause-play-btnTwo"><h2>Start</h2></div>
-                <div class="right-forword right-forwordTwo"><h2>Forword</h2></div>
+           <div class="bottom-musicPlay-contaner">
+                <div class="left-backword left-backwordTwo"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M7 4C7.55228 4 8 4.44772 8 5V11.3333L18.2227 4.51823C18.4524 4.36506 18.7628 4.42714 18.916 4.65691C18.9708 4.73904 19 4.83555 19 4.93426V19.0657C19 19.3419 18.7761 19.5657 18.5 19.5657C18.4013 19.5657 18.3048 19.5365 18.2227 19.4818L8 12.6667V19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19V5C6 4.44772 6.44772 4 7 4ZM17 7.73703L10.6056 12L17 16.263V7.73703Z"></path></svg></h2></div>
+                <div class="pause-play-btn pause-play-btnTwo"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path></svg></h2></div>
+                <div class="right-forword right-forwordTwo"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M16 12.6667L5.77735 19.4818C5.54759 19.6349 5.23715 19.5729 5.08397 19.3431C5.02922 19.261 5 19.1645 5 19.0657V4.93426C5 4.65812 5.22386 4.43426 5.5 4.43426C5.59871 4.43426 5.69522 4.46348 5.77735 4.51823L16 11.3333V5C16 4.44772 16.4477 4 17 4C17.5523 4 18 4.44772 18 5V19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19V12.6667ZM7 7.73703V16.263L13.3944 12L7 7.73703Z"></path></svg></h2></div>
             </div>
         </div>
     </div>
@@ -321,14 +332,14 @@
         </div>
 
         <div class="right-songalbumlist-contaner">
-            <div id="top-sonts-contanerThr">
+            <div class="top-sonts-contaner" id="top-sonts-contanerThr">
 
            </div>
-            <div class="bottom-musicPlay-contaner">
-                <div class="left-backword left-backwordThr"><h2>Back</h2></div>
-                <div class="pause-play-btn pause-play-btnThr"><h2>Start</h2></div>
-                <div class="right-forword right-forwordThr"><h2>Forword</h2></div>
-            </div>
+           <div class="bottom-musicPlay-contaner">
+            <div class="left-backword left-backwordThr"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M7 4C7.55228 4 8 4.44772 8 5V11.3333L18.2227 4.51823C18.4524 4.36506 18.7628 4.42714 18.916 4.65691C18.9708 4.73904 19 4.83555 19 4.93426V19.0657C19 19.3419 18.7761 19.5657 18.5 19.5657C18.4013 19.5657 18.3048 19.5365 18.2227 19.4818L8 12.6667V19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19V5C6 4.44772 6.44772 4 7 4ZM17 7.73703L10.6056 12L17 16.263V7.73703Z"></path></svg></h2></div>
+            <div class="pause-play-btn pause-play-btnThr"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path></svg></h2></div>
+            <div class="right-forword right-forwordThr"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M16 12.6667L5.77735 19.4818C5.54759 19.6349 5.23715 19.5729 5.08397 19.3431C5.02922 19.261 5 19.1645 5 19.0657V4.93426C5 4.65812 5.22386 4.43426 5.5 4.43426C5.59871 4.43426 5.69522 4.46348 5.77735 4.51823L16 11.3333V5C16 4.44772 16.4477 4 17 4C17.5523 4 18 4.44772 18 5V19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19V12.6667ZM7 7.73703V16.263L13.3944 12L7 7.73703Z"></path></svg></h2></div>
+        </div>
         </div>
     </div>
     <div class="songs-contaneer-display" id="songs-contaneer-displayFOUR">
@@ -338,14 +349,14 @@
         </div>
 
         <div class="right-songalbumlist-contaner">
-            <div id="top-sonts-contanerFour">
+            <div class="top-sonts-contaner" id="top-sonts-contanerFour">
 
            </div>
-            <div class="bottom-musicPlay-contaner">
-                <div class="left-backword left-backwordFour"><h2>Back</h2></div>
-                <div class="pause-play-btn pause-play-btnFour"><h2>Start</h2></div>
-                <div class="right-forword right-forwordFour"><h2>Forword</h2></div>
-            </div>
+           <div class="bottom-musicPlay-contaner">
+            <div class="left-backword left-backwordFour"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M7 4C7.55228 4 8 4.44772 8 5V11.3333L18.2227 4.51823C18.4524 4.36506 18.7628 4.42714 18.916 4.65691C18.9708 4.73904 19 4.83555 19 4.93426V19.0657C19 19.3419 18.7761 19.5657 18.5 19.5657C18.4013 19.5657 18.3048 19.5365 18.2227 19.4818L8 12.6667V19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19V5C6 4.44772 6.44772 4 7 4ZM17 7.73703L10.6056 12L17 16.263V7.73703Z"></path></svg></h2></div>
+            <div class="pause-play-btn pause-play-btnFour"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path></svg></h2></div>
+            <div class="right-forword right-forwordFour"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M16 12.6667L5.77735 19.4818C5.54759 19.6349 5.23715 19.5729 5.08397 19.3431C5.02922 19.261 5 19.1645 5 19.0657V4.93426C5 4.65812 5.22386 4.43426 5.5 4.43426C5.59871 4.43426 5.69522 4.46348 5.77735 4.51823L16 11.3333V5C16 4.44772 16.4477 4 17 4C17.5523 4 18 4.44772 18 5V19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19V12.6667ZM7 7.73703V16.263L13.3944 12L7 7.73703Z"></path></svg></h2></div>
+        </div>
         </div>
 
 
@@ -358,14 +369,14 @@
         </div>
 
         <div class="right-songalbumlist-contaner">
-            <div id="top-sonts-contanerFive">
+            <div class="top-sonts-contaner" id="top-sonts-contanerFive">
 
            </div>
-            <div class="bottom-musicPlay-contaner">
-                <div class="left-backword left-backwordFive"><h2>Back</h2></div>
-                <div class="pause-play-btn pause-play-btnFive"><h2>Start</h2></div>
-                <div class="right-forword right-forwordFive"><h2>Forword</h2></div>
-            </div>
+           <div class="bottom-musicPlay-contaner">
+            <div class="left-backword left-backwordFive"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M7 4C7.55228 4 8 4.44772 8 5V11.3333L18.2227 4.51823C18.4524 4.36506 18.7628 4.42714 18.916 4.65691C18.9708 4.73904 19 4.83555 19 4.93426V19.0657C19 19.3419 18.7761 19.5657 18.5 19.5657C18.4013 19.5657 18.3048 19.5365 18.2227 19.4818L8 12.6667V19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19V5C6 4.44772 6.44772 4 7 4ZM17 7.73703L10.6056 12L17 16.263V7.73703Z"></path></svg></h2></div>
+            <div class="pause-play-btn pause-play-btnFive"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path></svg></h2></div>
+            <div class="right-forword right-forwordFive"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M16 12.6667L5.77735 19.4818C5.54759 19.6349 5.23715 19.5729 5.08397 19.3431C5.02922 19.261 5 19.1645 5 19.0657V4.93426C5 4.65812 5.22386 4.43426 5.5 4.43426C5.59871 4.43426 5.69522 4.46348 5.77735 4.51823L16 11.3333V5C16 4.44772 16.4477 4 17 4C17.5523 4 18 4.44772 18 5V19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19V12.6667ZM7 7.73703V16.263L13.3944 12L7 7.73703Z"></path></svg></h2></div>
+        </div>
         </div>
  
     </div>
@@ -382,14 +393,14 @@
         </div>
 
         <div class="right-songalbumlist-contaner">
-            <div id="top-sonts-contanerSix">
+            <div class="top-sonts-contaner" id="top-sonts-contanerSix">
 
            </div>
-            <div class="bottom-musicPlay-contaner">
-                <div class="left-backword left-backwordSix"><h2>Back</h2></div>
-                <div class="pause-play-btn pause-play-btnSix"><h2>Start</h2></div>
-                <div class="right-forword right-forwordSix"><h2>Forword</h2></div>
-            </div>
+           <div class="bottom-musicPlay-contaner">
+            <div class="left-backword left-backwordSix"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M7 4C7.55228 4 8 4.44772 8 5V11.3333L18.2227 4.51823C18.4524 4.36506 18.7628 4.42714 18.916 4.65691C18.9708 4.73904 19 4.83555 19 4.93426V19.0657C19 19.3419 18.7761 19.5657 18.5 19.5657C18.4013 19.5657 18.3048 19.5365 18.2227 19.4818L8 12.6667V19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19V5C6 4.44772 6.44772 4 7 4ZM17 7.73703L10.6056 12L17 16.263V7.73703Z"></path></svg></h2></div>
+            <div class="pause-play-btn pause-play-btnSix"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z"></path></svg></h2></div>
+            <div class="right-forword right-forwordSix"><h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M16 12.6667L5.77735 19.4818C5.54759 19.6349 5.23715 19.5729 5.08397 19.3431C5.02922 19.261 5 19.1645 5 19.0657V4.93426C5 4.65812 5.22386 4.43426 5.5 4.43426C5.59871 4.43426 5.69522 4.46348 5.77735 4.51823L16 11.3333V5C16 4.44772 16.4477 4 17 4C17.5523 4 18 4.44772 18 5V19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19V12.6667ZM7 7.73703V16.263L13.3944 12L7 7.73703Z"></path></svg></h2></div>
+        </div>
         </div>
     </div>
 </div>
@@ -468,8 +479,8 @@
     </div>
     <div class="middle-content">
         <h1>About</h1>
-        <p id="hello" style="font-size: 1.2em;line-height:1.5em;">Hello,i'm Sumit Agrawal who create this "Music Web App" , it's my project which help me to making logics and complex stuffs  and also  help me to understand how to make/create  multiple pages website in a one page 
-                it was complexing  task for me to create that webApp in a one page . and the big thing happened for making responsive means for mobile-phone, because user will not only visit only with laptop or desktop they will also want to visit with phone because every one do not used laptop ,
+        <p id="hello" style="font-size: 1.2em;line-height:1.5em;">Hello,i'm Sumit Agrawal who has created this "Music Web App" , it's my project which helps to me for making logics and complex stuffs  and also it helps me to understand that how to make/create multiple pages website in a single page .
+                It was a complex task for me to create that webApp in a single page and the biggest problems happened for making responsive means for mobile-phone, because user will not only visit only with laptop or desktop they will also want to visit with phone because every one do not used laptop ,
                 so it's need to make as well as responsie . So,  here comes the big  stuff problems to make exect mobile viewport  but  lots of practices help me to make easily responsive.
                 yeah, it's not fully completed it has lots of glitch it was  very complex so yap! i'm working on it. 
 

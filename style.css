@@ -7,270 +7,15 @@
 html , body{
  height:100%;
  width:100%;
- /* background: #31ee9c; */
+ 
 }
 body::-webkit-scrollbar{
     display: none;
 }
 .main{
  width:100vw;
+ /* height: 60vh; */
 }
-
-.parent2{
-    width: 100vw;
-    background-color: black;
-    display:block;
-    position:relative;
-    overflow: hidden;
-}
-.Door{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    /* background-color: green; */
-}
-.Something{
-    width: 100%;
-    height: 100%;
-    position:absolute;
-    /* background-color: wheat; */
-    /* background: #00000029; */
-    align-items: center;
-    display: flex;
-    justify-content: center;
-   flex-wrap: wrap;
-   text-align: center;
-   
-}
-  
-/* button{
-    width: 200px;
-    height: 70px;
-    background-color: #059393;
-    font-size: 2em;
-    font-weight: bolder;
-    border-radius: 2px;
-     border: 1px solid transparent;
-    text-shadow: 1px 1px 2px rgb(7, 138, 138);
-    box-shadow:1px 1px 10px 1px  rgb(150, 191, 193);
-    font-family: "curlz MT";
-
-}
-.botton{
-    position: relative;
-    opacity: 0;
- } */
-/* .textAnimation{
- display: flex;
- width: 100%;
- align-items: center;
- justify-content: center;
- text-align: center;
- padding: 2em;
-  
-}
-.text1, .text2 , .text3 , .text4 ,.text5{
-    display: flex;
-    padding: 1em;
-    background: #000;
-}
-
-.textAnimation h2{
-    opacity: 0;
-    font-size:2em;
-    font-weight: bolder;
-    color: aliceblue; 
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
-    font-family: "curlz MT";
-}
-.IndideDoor{
-    width: 100%;
-    height: 100%;
-     display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    perspective: 80vh;
-    position: relative;
-    z-index: 1;
-}
-
-.loader{
-width: 90vw;
-height: 4px;
-background-color: #00000085;
-border-radius: 25%;
-overflow: hidden;
-}
-.loding{
-    width: 10vw;
-    height: 5px;
-    background-color: #8a8a8a;
-    animation:loder 2s infinite;
-    border-radius: 25%; 
-}
-@keyframes loder {
-    from{
-        width: 10vw;
-    }
-   to{
-        width: 90vw;
-    }
-}
-
-.IndideDoor h1{
-    font-size:7em;
-    font-weight: bolder;
-    color: dimgray;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
-    font-family: "curlz MT";
-    position: absolute;
-}
-.leftDoor{
-width: 100vw;
-height: 100vh;
-background: #ffffff10;
-display: flex;
-align-items: center;
-justify-content:right;
-overflow: hidden;
-position: relative;
-}
-
-
-.rightDoor{
-    width: 100vw;
-    height: 100vh;
-    background: #ffffff10;
-    display:flex;
-    align-items: center;
-    justify-content:left;
-    position: relative;
-} */
-
-
-
-/* 
-.loginPage{
-    width:100vw;
-    height: 100vh;
-    background-color: #000;
-   
-    display: flex;
-    align-items:center ;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
- 
-
-.AutotextWrite{
-    width: 95%;
-    height: 13vw;
-    background: #ffffff10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-     
-}
-.textContaner{
-    width: 100%;
-    height: 13vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- 
-}
-.text h1{
-   margin: 2px;
-    opacity:0;
-    font-weight: 100;
-    
-}
-.text{
-    display: flex;
-    font-size: 2vw;
-    color:orange;
-    font-family:monospace;
-  
-}
-.text4,.text5{
-    color: rgb(66, 65, 65);
-font-family: cursive;
-}
-
-.login{
-    width:95vw;
-    height:77vh;
-     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff10;
-    
-}
-.leftLoginPage{
-    width:50vw;
-    height:440px;
-     display: flex;
-    align-items:center;
-    justify-content: center;
-     position: relative;
- 
-}
-.content{
-    height:400px;
-    width: 400px;
-    background-color: orange;
-    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.425);
-    border-radius: 20%;
-    display: flex;   
-     justify-content: center;
-    align-items: center;
-     
-    opacity: 1;
-
-   }
-.centerLoginBox{
-    height: 250px;
-    width: 300px;
-    
-    border-radius: 10%;
-  
-   }
-.content h2{
-    font-family: sans-serif;
-    font-weight: 800;
-    margin-top: -1em;
-    display: flex;
-     color: rgb(241, 237, 237);
-    justify-content: center;
-    align-items: center;
-}
-input{
-    width: 100%;
-    height: 50px;
-    padding: 1em;
-    background-color: #f1efef1a;
-    border: 1px solid orange;
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    font-weight: 600;
-    margin-top: 1em;
-    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.425);
-
-}
-button{
-    height: 50px;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid transparent;
-    margin-top: 1em;
-    font-weight: 900;
-    font-size: 1.2em;
-    color: rgba(0, 0, 0, 0.678);
-    letter-spacing: 1px;
-
-} */
 
 
 /* FIRST VIDEO PAGE AND ALSO LOGIN PAGE */
@@ -279,14 +24,12 @@ button{
         height: 100vh;
         background-color: black;
         align-items: center;
-        display: flex;
+        /* display: flex; */
+        display: none;
         justify-content: center;
         overflow: hidden;
         position: relative;
     }
- 
- 
- 
  
 .Video-Fist-Page video{
         width: 60%;
@@ -297,7 +40,7 @@ button{
       
     }
 
-    overlay-video{
+overlay-video{
         width: 100vw;
         height: 100vh;
         background-color: rgb(0, 255, 98);
@@ -315,20 +58,21 @@ button{
     }
 
 
-    .content{
-        position:absolute;
-        bottom: 3%;
-        height:200px;
-        width: 330px;
+.content{
+        /* position:absolute;
+        bottom: 3%; */
+        height:120px;
+        width:100%;
         border-radius: 20%;
         display: flex;   
          justify-content: center;
         align-items: center;
         opacity: 1;
+        /* background: #db9797; */
     
        }
-    .centerLoginBox{
-       height: 140px;
+.centerLoginBox{
+       height: 100px;
        width:300px;
        border-radius: 10%;
        align-items: center;
@@ -336,10 +80,9 @@ button{
        justify-content: center;
        flex-wrap: wrap;
        }
-    .content h2{
+.content h2{
         font-family: sans-serif;
         font-weight: 800;
-     
         display: flex;
          color: rgb(241, 237, 237);
         justify-content: center;
@@ -351,19 +94,20 @@ button{
         height: 40px;
         padding: 1em;
         background-color: #f1efef1a;
-        border: 1px solid orange;
-        color: rgb(255, 255, 255);
+        border: 1px solid rgb(0, 0, 0);
+        color: rgb(254, 255, 255);
         font-size: 15px;
         font-weight: 600;
         margin-top: 1em; 
         box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.425);
     
     }
+    /* tempory comment for do not distub any other button */
     button{
         height: 40px;
         width: 50%;
-        background-color:orange;
-        border: 1px solid transparent;
+        /* background-color:orange; */
+        border: 1px solid white;
         margin-top: 1em;
         font-weight: 900;
         font-size: 12px;
@@ -373,99 +117,207 @@ button{
     
     }
 
-
-
-#btn:hover{
+/* #btn:hover{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.425);
    
-}
+} */
  
-@media screen and (max-width:720px){
+/* @media screen and (max-width:720px){
     .Video-Fist-Page{
         display:none;
      }
    
+} */
+
+
+
+
+/* mobileView  css*/
+
+.mobileView{
+    height: 100vh;
+    /* background: #000; */
+    width: 100vw;
+    background:linear-gradient(to right, rgba(72, 4, 103, 0.941),  rgb(0, 0, 0), rgb(3, 3, 87)); 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-/*
-.videoContaner{
-    width:50vw;
-    height:420px;
-     display: flex;
+.center-view{
+    height: 600px;
+    width: 100%;
+    /* background-color: #128084; */
+    display: flex;
+    align-items:last baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.centerBOX{
+    width: 95%;
+    height: 520px;
+    /* background: #eb892e; */
+    display: flex;
     align-items: center;
     justify-content: center;
 
 }
 
-.centerVideoBox{
-
-   height:350px;
-    width: 350px;
-    background-color: orange;
-    position: relative;
+ 
+ 
+.rightText{
+    width:50vw;
+    height: 300px;
+    /* background-color: #9f8a8a;  */
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
     
-   
-}
-#img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-     
+ }
+.hed{
+    height: 150px;
+    /* background-color: red; */
 }
 
-.Overlay{
-   position: relative;
-    height:100%;
-    width: 100%;
-   
-
- } */
-
-/* @media screen and (max-width:720px) {
-    .loginPage{
-        background-color:orange;
+.rightText h1{
     
+    color: wheat;
+    text-transform: uppercase;
+    /* font-family:sans-serif; */
+    font-family: Algerian;
+    font-weight: 300;
+    font-size: 6.3em;
+    letter-spacing: 1px;
+    width: 1000px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    margin-left:45px;
+    opacity: 0;
+    letter-spacing: .1em;
+
+} 
+
+.right{
+    letter-spacing: .1em;
+    margin-right: 35px;
+    opacity: 0;
+ 
+}
+
+@media screen  and (max-width:720px){
+   
+    .mobileView{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    /* background: #fc7c05; */
+    
+
+    }
+    .center-view{
+        /* background-color: #860314; */
+        height: 60vh;
+        width: 100%;
+        margin-top: -18em;
+
+        /* position: fixed; */
+
+    }
+    .centerBOX{
+        /* background: #000; */
+        height: 60vh;
+        /* width: 100vw; */
+
+    }
+
+    .rightText{
+        width: 100vw;
+        height: 200px;
+       
+    }
+    .hed{
+        height: 130px;
         
     }
-    .AutotextWrite{
-        width: 100vw;
-        height:210px;
-      background: #000;
-      flex-wrap: wrap;
-     
+    .rightText h1{
+        font-size: 2.3em;
+        /* background: #000; */
+      margin-top: 1.9em;
     }
-    .textContaner{
-        height: 500px;
-        width: 100%;
-        background-color: red;
-    }
-    .text{
-     
-        font-size: 1em;
-        color: #ffffff;
-    
-    }
-    .login{
-        flex-wrap: wrap;
-       
-        width: 100%;
-    }
-    .leftLoginPage{
-        width: 100%;
-        height: 50vh;
-     }
+ 
+}
+ 
+.enter-bttn{
+    width: 130px;
+    height: 36px;
+    /* background-color: rgb(239, 18, 18); */
+    background:linear-gradient(to right,  rgba(254, 135, 17, 0.816), rgba(254, 5, 5, 0.784)); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: white;
+    font-weight: 900;
+    font-family: sans-serif;
+    margin-top: 13px;
+    border: 1px solid rgba(204, 203, 203, 0.712);
+}
+/* .enter-bttn:hover{
+    border: 1px solid rgb(255, 255, 255);
+   color: #000;
+   background-color: rgb(255, 255, 255);
+ } */
+ .enter-bttn:active{
+    scale: .9;
+ }
+ @media screen  and (max-width:720px){
+    /* input{
+        background: #00000033;
+    } */
+    /* .enter-bttn{
+        background: #00000000;
+    } */
 
-    .videoContaner{
-        width: 100%;
-         display: none;
-    }
-    #img{
-        display: none;
-    }
-} */
+ }
+.bottom-view{
+    height: 100px;
+    width: 100%;
+    /* background-color: #bbd8dd; */
+    display: none;
+    align-items: center;
+    justify-content:center;
+    font-size: 3em;
+    /* margin: 2em; */
+   position: relative;
+   top: -80px;
 
+}
+
+.boxe{
+    height: 60px;
+    width:84%;
+    /* background: #e1cece; */
+    display: flex;
+    align-items: center;
+    /* background-color: #047892; */
+}
+.music{
+    margin-left: 20px;
+
+}
+
+.fill-video{
+    margin-left: 30px;
+}
 
 
 /* SECOND PAGE CSS */        
@@ -475,7 +327,6 @@ button{
     height: 100vh;
     /* background: linear-gradient(to right,#dadada, black); */
     background:linear-gradient(to right,  rgb(28, 39, 49), rgb(9, 14, 18)); 
- 
     display:none;
     align-items: center;
     justify-content: center;    
@@ -486,6 +337,7 @@ button{
 .cover_Contaner{
     height: 90vh;
     width: 90vw;
+    /* background-color: red; */
     background: #ffffff10;
     overflow: scroll;
     border-radius: 1%;
@@ -548,7 +400,7 @@ li::selection{
 .left_Contaner{
     width: 882.3px;
     height: 90%;
- 
+    /* background-color: #128084; */
    
 }
 
@@ -609,12 +461,11 @@ h6::selection{
 height: 350px;
 width: 100%;
 display: flex;
+/* background-color: yellowgreen */
 }
 .right_ImageContaner{
     width: 400px;
     height: 100%;
-    /* background-color: #49818635; */
-    /* background-color: yellowgreen; */
     overflow: hidden;
     background-image: url();
     background-size: cover;
@@ -626,46 +477,66 @@ display: flex;
     width: 100%;
     height:100%;
    position: relative;
+   /* background-color: #fff; */
 }
 .overlay{
     width: 400px;
     height: 400px;
     position: relative;
     background: #128084;
-    
-    /* display: none; */
-
 }
 
 video{
     object-fit: cover;
+    /* background: #000; */
     width: 100%;
     height: 100%;
     position: absolute;
     background-size: cover;
-    
-    
 }
 .left_TextContaner{
     width: 600px;
     height: 100%;
-    /* background-color: #b371076f; */
-    padding: 10px;
-   position: relative;
-   /* position: absolute; */
-   
-     
-
+     padding: 10px;
+   position: relative;   
 }
 .cover_contaner{
     height: 340px;
- /*  background: #d4a6a6;*/
-    color: antiquewhite;
+     color: antiquewhite;
     font-family: sans-serif;
     overflow: hidden;
     padding-left: 1em;
     
 }
+
+
+@media screen and (max-width:720px) {
+    .right_ImageContaner{
+        height: 180px;
+        
+    }
+    .videos{
+        background: #000;
+        height:100%;
+        overflow: hidden;
+        border-radius: 40px;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+
+    }
+    .overlay{
+        background-color: #e95e5e;
+        /* border-radius: 1%; */
+        height:200px;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+
+    }
+}
+
+
 h1, .someFavratesorWhat, p , .btns{
     margin-bottom:1em ;
 }
@@ -675,6 +546,7 @@ h1, .someFavratesorWhat, p , .btns{
     background-color: #ffffff36;
 
 }
+ 
 .lineDefault{
     height:100%;
     width: 2px;
@@ -705,12 +577,7 @@ h1, .someFavratesorWhat, p , .btns{
 }
 
 .playideoBtn .playBottom{
-    /* background-color: #fff; */
-    color: #000000;
-    /* height: 27px;
-    width: 27px; */
-   
-    
+     color: #000000; 
 }
 
 
@@ -723,18 +590,15 @@ h1, .someFavratesorWhat, p , .btns{
     font-family: sans-serif;
 }
 .bottom_leftContaner h4{
-    /* background-color: #fff; */
-    width: 100%;
+     width: 100%;
     padding: 8px;
 
 }
 .bottom_Contaner{
     height: 90%;
     width: 100%;
-    /* background-color: yellowgreen; */
-    overflow-y: hidden;  
-    /* padding: 8px; */
-}
+     overflow-y: hidden;  
+ }
 
 .bottom_Contaner::-webkit-scrollbar{
     display: none;
@@ -742,20 +606,14 @@ h1, .someFavratesorWhat, p , .btns{
 .Albume_Contaner{
     display:flex;
     align-items: center;
-    /* background-color: #fff; */
-    width: 100vw;
-   
-
-    
+     width: 100vw;
 }
 .changeContaner{
     width: 150px;
     height: 150px;
     margin: 10px;
     /* background-color: #4981863c; */
-    border-radius: 20px;
-    /* overflow: hidden; */
-    
+    border-radius: 20px;    
 }
 .changeContaner img{
     border-radius: 20px;
@@ -768,10 +626,8 @@ h1, .someFavratesorWhat, p , .btns{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
-    font-family: sans-serif;
-    /* padding: 15px; */
-    font-size: 10px;
+     font-family: sans-serif;
+     font-size: 10px;
 }
 .download{
     height: 30px;
@@ -791,30 +647,27 @@ color: #e5e4e4;
 }
 /* Right Contaner For Music lists */
 
-
-
 .right_Contaner{
-    width: 500px;
+    width: 450px;
     height: 90%;
- 
+    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
+ }
 @media screen and (max-width:720px) {
   
     .App_Contaner{
      overflow: hidden;
-      /* background: linear-gradient(to right,#dadada, black); */
-      background:linear-gradient(to right,  rgb(28, 39, 49), rgb(9, 14, 18)); 
+       background:linear-gradient(to right,  rgb(28, 39, 49), rgb(9, 14, 18)); 
    
     }
     .cover_Contaner{
         overflow-y:scroll;
-        width: 97%;
+        width: 95%;
         height: 97%;
         border-radius: 10%;
+        background-color: transparent;
     }
 
     .main-bar{
@@ -823,32 +676,44 @@ color: #e5e4e4;
     }
     .left_Contaner{
       
-        width: 412px;
-       left: 6px;
+        width: 360px;
+       /* left: 6px; */
         overflow: hidden;
        position: relative;
         height: 80%;
+        /* background-color: #000; */
+
       }
-    .top_leftContaner{
-       
-        flex-wrap: wrap;
-        width: 400px;
-    
+      .right_Contaner{
+        width: 360px;
+        /* background-color: #000; */
     }
 
-    .right_Contaner{
-        width: 412px;
-       
+
+    .top_leftContaner{
+       /* background-color: green; */
+        flex-wrap: wrap;
+        width:100%;
+        height: 380px;
+    
     }
+/* .left_TextContaner{
+    background-color: yellowgreen;
+    height:360px;
+} */
+    .bottom_leftContaner{
+        /* background-color: blue; */
+       z-index: 2;
+        width: 100%;
+        display: none;
+    }
+   
     .big_Music_Contaner{
     padding: 1em;
     } 
-    .bottom_leftContaner{
-        background-color: blue;
-       z-index: 2;
-        width: 400px;
-        display: none;
-    }
+
+
+    
 }
  
 .big_Music_Contaner{
@@ -861,8 +726,7 @@ color: #e5e4e4;
     flex-wrap: wrap;
     color: #fff;
     font-family: cursive;
-    /* font-family: forte; */
-    /* padding: 2em; */
+  
 }
 
 
@@ -965,8 +829,10 @@ top: -1.2em;
 } */
 
 .play_Box{
-    height: 140px;
+    height: 130px;
+  
     width: 96%;
+  /* background: #000; */
     background-color: rgba(255, 255, 255, 0.086);
     border-radius: 15px;
     display: flex;
@@ -989,6 +855,7 @@ img{
     background-size: cover;
 }
 .SongContent{
+    height: 100px;
     line-height:25px;
     /* background-color: #484343; */
     /* color: #000; */
@@ -1083,13 +950,18 @@ img{
     border-radius: 50%;
 }
 @media screen and (max-width:720px){
+    
+    .SongContent{
+        /* background: #000; */
+        margin-left: 15px;
+    }
     #search-Bar{
         width: 200px;
     }
 }
 
 .bodyCover{
-    height:600px ;
+    height:580px ;
     width: 100%;
     /* background: yellowgreen; */
     align-items: center;
@@ -1206,6 +1078,7 @@ img{
     background: #ffffff10;
     border-radius: 1%;
     display: flex;
+    padding: 1em;
     /* flex-wrap: wrap; */
     justify-content: space-around;
     /* position: relative; */
@@ -1215,8 +1088,9 @@ img{
 .head-bar{
     height: 130px;
     width: 90vw;
-    background: #ffffff10;
-    
+    background: #ffffff13;
+    /* background: #0c222d76; */
+
 }
 nav{
     display: flex;
@@ -1237,7 +1111,7 @@ li{
     text-decoration:none;
     /* text-transform:uppercase; */
     color: rgb(177, 177, 177);
-    font-family: monospace;
+    font-family:sans-serif;
     font-size: 1.2em;
     cursor: pointer;
 }
@@ -1275,29 +1149,58 @@ li::selection{
 }
 @media screen and (max-width:720px) {
 
-    
+   
    .head-bar{
         overflow-y: hidden;
         height:70px;  
-        width: 90%;
-         position: absolute;
-        z-index: 999;
+        width: 140vw;
+         z-index: 999;
       align-items: center;
      display: flex;
+     
+     /* flex-wrap: wrap; */
      background-color: transparent;
      top: 3px;
-    }
+     padding: 0em 10px;
 
+    }
+    nav{
+        /* background-color: #11bc3c; */
+        overflow: scroll;
+        width: 100vw;
+    }
+   
+    #HOME svg{
+        /* background: #000; */
+        height: 30px;
+        width: 30px;
+    }
+    #ul{
+        /* background: #000; */
+        height:90%;
+        /* width:100%; */
+        justify-content: right;
+        align-items: center;
+        display: flex;
+        
+
+    }
+     
+     
+    li{
+        margin: 10px;
+        font-weight: 900;
+        /* font-size: 2em; */
+        font-size: 13px;
+    }
+ 
     .head-bar::-webkit-scrollbar{
         display: none;
     }
    
 
-    nav li{
-        font-size: 2em;
-        color: rgb(0, 217, 255);
-      
-    }
+
+    
   
    
 }
@@ -1305,14 +1208,14 @@ li::selection{
 .left-album-contaner{
     width: 500px;
     height: 500px;
-    /* background-color: rgb(208, 101, 101); */
+    background-color: rgb(208, 101, 101);
     border-radius: 50%;
     overflow: hidden;
      z-index: 1;
     
 } 
 .right-songalbumlist-contaner{
-    width: 700px;
+    /* width: 50%; */
     height: 570px;
     /* background-color: yellowgreen; */
     /* background: #ffffff00; */
@@ -1402,7 +1305,7 @@ li::selection{
 .bottom-musicPlay-contaner{
     height: 100px;
     width: 100%;
-    /* background-color: #43424222; */
+    background-color: #43424222;
     border-radius: 0px 0px 40px 40px;
     display: flex;
     align-items: center;
@@ -1421,7 +1324,7 @@ li::selection{
 .left-backword{
     width: 100px;
     height: 40px;
-    background-color: turquoise;
+    /* background-color: turquoise; */
     border-radius: 20px;     
    align-items: center;
    justify-content: center;
@@ -1431,7 +1334,7 @@ li::selection{
 .pause-play-btn{
     width: 100px;
     height: 40px;
-    background-color: turquoise;
+    /* background-color: turquoise; */
     border-radius: 10px;
     align-items: center;
     justify-content: center;
@@ -1441,7 +1344,7 @@ li::selection{
 .right-forword{
     width: 100px;
     height: 40px;
-    background-color: turquoise;
+    /* background-color: turquoise; */
     border-radius: 20px;
     align-items: center;
     justify-content: center;
@@ -1451,37 +1354,60 @@ li::selection{
 
 
 @media screen and (max-width:720px) {
-    .songs-contaneer-display{
-        flex-wrap: wrap;
-         /* background-color: yellowgreen; */
-         height: 100%;
-         /* width: 100%; */
-         /* padding: 1em; */
+   
+    .Singlesong-contaner{
+        height: 60px;
     }
-
-    .left-album-contaner{
-        width: 900px;
-        height: 380px;
-        background-color:rgb(195, 102, 92);
-        border-radius: 40px 40px 0px 0px;
-         
-    }
-    .right-songalbumlist-contaner{
-      margin-top: -5em;
-      position: relative;
-        border-radius: 40px 40px 10px 10px;
-        background-color: #212121;
+    .img-circle{
+        width: 40px;
+        height: 40px;
        
     }
+    
+    .Display-songs-contaner{
+        height: 100%;
+        padding: 0;
+        /* position: fixed; */
+    }
+    .songs-contaneer-display{
+        flex-wrap: wrap;
+        height: 100%;
+        background-color: transparent;
+        width: 100vw;
+      
+        }
+        .top-sonts-contaner{
+            /* background: #000; */
+            height: 375px;
+        }
+    .left-album-contaner{
+        width: 900px;
+        height: 230px;
+        background-color:rgb(195, 102, 92);
+        border-radius: 40px 40px 40px 40px;
+       
+    }
+    .right-songalbumlist-contaner{
+      margin-top: -1.4em;
+      position: relative;
+      width: 100%;
+      height: 575px;
+      /* padding: 2em; */
+         border-radius: 40px 40px 10px 10px;
+        /* background-color: #c00707; */
+        /* padding: 2em; */
+      /* background-color: #af2929;  */
+    }
+    
     .top-sonts-contaner{
-
+/* background: #000; */
         height: 450px;
         
     
     }
     .LEFT{
         width: 280px;
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .RIGHT{
@@ -1651,136 +1577,6 @@ svg:hover{
 }
 
 
-
-/* mobileView  css*/
-
-.mobileView{
-    height: 100vh;
-    width: 100vw;
-    background-color: #000000;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.center-view{
-    height: 600px;
-    width: 100%;
-    /* ackground-color: #128084; */
-    display: flex;
-    align-items:last baseline;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.centerBOX{
-    width: 95%;
-    height: 420px;
-    /* background: #d53b3b; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.leftText{
-    height: 420px;
-    width:20px;
-    /* background-color: yellowgreen; */
- 
-    }
-/* h5{
-    height: 20px;
-    width: 200px;
-    rotate: -90deg;
-    background-color: #b7b4b4;
-    letter-spacing: .1em;
-} */
-.rightText{
-    width: 370px;
-    height: 430px;
-/* background-color: #9f8a8a;  */
-color: #000;
-}
-.hed{
-    /* width: 350px; */
-    height: 270px;
-    /* 
-    background-color: red; */
-}
-
-.rightText h1{
-     text-transform: uppercase;
-    font-family: sans-serif;
-    font-weight: 900;
-    font-size: 6.3em;
-    letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.779);
-}
-
-@media screen  and (max-width:720px){
-    .hed{
-        height: 250px;
-    }
-    .rightText h1{
-        font-size: 5.2em;
-    }
-
-    .mobileView{
-        display: flex;
-    }
-}
-.rightText h5{
-  padding-top: 1.5em;
-  /* position: relative; */
-  color: rgba(223, 222, 222, 0.825);
-}
-.enter-bttn{
-    width: 130px;
-    height: 36px;
-     background:linear-gradient(to right,  rgba(254, 135, 17, 0.816), rgba(254, 5, 5, 0.784)); 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-    color: white;
-    font-weight: 900;
-    font-family: sans-serif;
-    margin-top: 13px;
-}
-.enter-bttn:hover{
-    box-shadow: 0px 0px 7px 0px rgb(214, 110, 110);
-}
-
-.bottom-view{
-    height: 100px;
-    width: 100%;
-    /* background-color: #bbd8dd; */
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    font-size: 3em;
-    /* margin: 2em; */
-   position: relative;
-   top: -80px;
-
-}
-
-.boxe{
-    height: 60px;
-    width:84%;
-    /* background: #e1cece; */
-    display: flex;
-    align-items: center;
-    /* background-color: #047892; */
-}
-.music{
-    margin-left: 20px;
-
-}
-
-.fill-video{
-    margin-left: 30px;
-}
 
 /* AboutPAge css */ 
 

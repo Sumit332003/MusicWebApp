@@ -16,11 +16,13 @@ function backfromAboutpg(){
 class Day{
    day(){
       var a = new Date() 
-      var d =["Sun day -","Mon day -","Tue sday -","Wed nesday ","Thu rsday","Fri day -","Sat urday "];
+      var d =["Sun day ","Mon day ","Tue sday ","Wed nesday ","Thu rsday","Fri day ","Sat urday "];
       var c = d[a.getDay()]
       console.log(d[a.getDay()]);
       document.querySelector(".rightText h1").innerHTML=c
   }
+
+
 
   clicktoenter(){
   var btn = document.querySelector(".enter-bttn")
@@ -59,8 +61,8 @@ class Day{
 }
 //calling with the help of class Object
 var day = new Day();
-day.day();
-day.clicktoenter();
+// day.day();
+// day.clicktoenter();
 day.clickIcons();
 
 function overlayPage(){
@@ -103,37 +105,97 @@ function overlayPage(){
    })
 
 }
-overlayPage();
+// overlayPage();
 
 
 var arr2=[
-      {songName:"Bulleya", url:"./Songs/Bulleya.mp3" , image:"./imgs/bulleya.jpg" ,duration:"4:37",video:"./videos/Bulleya.mp4" , videoImage:"./imgs/bulleya.jpg"},
-      {songName:"Chhote Chhote Peg", url:"./Songs/Chhote Chhote Peg.mp3" , image:"./imgs/peg.jpg" ,duration:"4:37",video:"./videos/Chhote Chhote Peg.mp4" , videoImage:"./imgs/peg.jpg"},
-      {songName:"Kar Har Maidaan Fateh", url:"./Songs/KAR HAR MAIDAAN FATEH.mp3" , image:"./imgs/sanju.jpg" ,duration:"4:37",video:"./videos/KAR HAR MAIDAAN FATEH.mp4" , videoImage:"./imgs/sanju.jpg"},
-      {songName:"Thank You God", url:"./Songs/Thank You God.mp3" , image:"./imgs/god.jpg" ,duration:"4:37",video:"./videos/Thank You God.mp4" , videoImage:"./imgs/god.jpg"},
-      {songName:"Udta Parinda", url:"./Songs/Udta Parinda.mp3" , image:"./imgs/Udta_Parinda.jpg" ,duration:"4:37",video:"./videos/Udta Parinda.mp4" , videoImage:"./imgs/trans.png"},
-   {songName:"Marham",url:"./Songs/Marham.mp3" , image:"./imgs/marham.jpg" ,duration:"1:53", video:"./videos/Marham.mp4"},
-   {songName:"Aarzoo",url:"./Songs/Aarzoo.mp3" , image:"./imgs/Aarzoo.png",duration:"3:24", video:"./videos/Aarzoo - One - Take Music Video _ @IqlipseNova.mp4", videoImage:"./imgs/trans.png"},
-   {songName:"Kaash Aisa Hota",url:"./Songs/Kaash1.mp3" , image:"./imgs/kaash.png",duration:"3:32" , video:"./videos/Kaash Aisa Hota.mp4"},
-     {songName:"Apna Bna Le",url:"./Songs/Apna.mp3" , image:"./imgs/apena.png" ,duration:"3:24", video:"./videos/Apna Bana Le.mp4"},
-   {songName:"Dil Jhoom",url:"./Songs/Jhoom.mp3" , image:"./imgs/jhoom.png",duration:"5:00", video:"./videos/Dil Jhoom.mp4"},
-   {songName:"Malang",url:"./Songs/Malang.mp3" , image:"./imgs/malang.png",duration:"4:47", video:"./videos/Malang.mp4"},
-   {songName:"Naina Da Kya Kasoor",url:"./Songs/NainaDaKyaKasoor.mp3" , image:"./imgs/nainaDa.png",duration:"3:48", video:"./videos/Naina Da Kya Kasoor.mp4"},
-   {songName:"Raatan Lambiyan",url:"./Songs/RaatanLambiyan.mp3" , image:"./imgs/raatan.png",duration:"3:50", video:"./videos/Raataan Lambiyan.mp4"},
-   // {songName:"Tere Naal",url:"./Songs/TereNaal.mp3" , image:"./imgs/naal.png",duration:"3:18"},
-   // {songName:"Udd Jaa Kaale Kaava",url:"./Songs/UddJaaKaaleKaava.mp3" , image:"./imgs/heart1.jpg",duration:"3:24"},
-   // {songName:"Ok_Jaanu",url:"./Songs/okJaanu1.mp3" , image:"./imgs/okJaanu.png",duration:"3:25"},
-   // {songName:"Tere Pyar Mein",url:"./Songs/Tere_Pyar1.mp3" , image:"./imgs/pyarMain.png",duration:"2:57"},
-        // {songName:"Hua Main", url:"./Songs/HuaMain.mp3" , image:"./imgs/huaMain.jpg" ,duration:"4:37",video:"./videos/Pehle Bhi Main.mp4" , videoImage:"./imgs/trans.png"},
-   // {songName:"Lovely",url:"./Songs/Lovely.mp3" , image:"./imgs/lovely.png",duration:"3:20", video:"./videos/vid3.mp4"},
-   // {songName:"Khwab",url:"./Songs/Khwab1.mp3" , image:"./imgs/khwab.png",duration:"2:38" , video:"./videos/vid5.mp4"},
- // {songName:"Haareya Meri Pyaari Bindu",url:"./Songs/HaareyaMeriPyaariBindu.mp3" , image:"./imgs/heeriye.png" ,duration:"3:34", video:"./videos/vid7.mp4"},
-   // {songName:"Haaye Oye",url:"./Songs/HaayeOye.mp3" , image:"./imgs/oye.png",duration:"3:20" , video:"./videos/hi.mp4"},
-   // {songName:"Kalavathi",url:"./Songs/Kalavathi.mp3" , image:"./imgs/kalavathi.png",duration:"4:14"},  
-   // {songName:"Dil Diya Gallan",url:"./Songs/Dil.mp3" , image:"./imgs/diyan.png",duration:"4:20"},
-   // {songName:"Main Raat Din Dua Karu",url:"./Songs/RaatDinDuaKaru.mp3" , image:"./imgs/raatDin.png",duration:"4:23"},
 
+   //english
+   {songName:"Alan Walker & AvaMax Alone", url:"./Songs/English/AlanWalker&AvaMaxAlone.mp3" , image:"./imgs/English/alan.png" ,duration:"4:06",video:"./videos/English/AlanWalker&AvaMaxAlone.mp4" ,videoImage:"./imgs/English/alan.png"},
+   {songName:"DDU DU DDU DU", url:"./Songs/English/DDU-DU-DDU-DU.mp3" , image:"./imgs/English/ddu.png" ,duration:"3:35",video:"./videos/English/DDU-DU-DDU-DU.mp4" ,videoImage:"./imgs/English/ddu.png"},
+   {songName:"The FatRat & RIELL", url:"./Songs/English/TheFatRat&RIELL.mp3" , image:"./imgs/English/fatrat.png" ,duration:"3:32",video:"./videos/English/TheFatRat&RIELL.mp4" ,videoImage:"./imgs/English/fatrat.png"},
+   {songName:"FIFTYFIFTY-Cupid", url:"./Songs/English/FIFTYFIFTYCupid.mp3" , image:"./imgs/English/fifty.png" ,duration:"2:53",video:"./videos/English/FIFTYFIFTYCupid.mp4" ,videoImage:"./imgs/English/fifty.png"},
+   {songName:"How You Like That", url:"./Songs/English/HowYouLikeThat.mp3" , image:"./imgs/English/how.png" ,duration:"3:03",video:"./videos/English/HowYouLikeThat.mp4" ,videoImage:"./imgs/English/how.png"},
+   {songName:"Luis Fonsi", url:"./Songs/English/LuisFonsi-DespacitoftDaddyYankee.mp3" , image:"./imgs/English/luis2.png" ,duration:"4:41",video:"./videos/English/LuisFonsi-DespacitoftDaddyYankee.mp4" ,videoImage:"./imgs/English/luis2.png"},
+   {songName:"See You Again", url:"./Songs/English/SeeYouAgainftCharliePuth.mp3" , image:"./imgs/English/see.png" ,duration:"3:57",video:"./videos/English/SeeYouAgainftCharliePuth.mp4" ,videoImage:"./imgs/English/see.png"},
+   {songName:"Shape of You", url:"./Songs/English/ShapeofYou.mp3" , image:"./imgs/English/shap.png" ,duration:"4:23",video:"./videos/English/ShapeofYou.mp4" ,videoImage:"./imgs/English/shap.png"},
+   {songName:"I Wanna Be Yours X Summer time Sadness", url:"./Songs/English/IWannaBeYoursXSummertimeSadness.mp3" , image:"./imgs/English/wanna.png" ,duration:"3:00",video:"./videos/English/IWannaBeYoursXSummertimeSadness.mp4" ,videoImage:"./imgs/English/wanna.png"},
+   // {songName:" ", url:"./Songs/English/.mp3" , image:"./imgs/English/lovwMe.png" ,duration:":",video:"./videos/English/ .mp4" ,videoImage:"./imgs/English/loveMe.png"},
+    // {songName:"Lovely",url:"./Songs/Lovely.mp3" , image:"./imgs/lovely.png",duration:"3:20", video:"./videos/vid3.mp4"},
+
+
+   //sad
+   {songName:"Tu Hai Kahan", url:"./Songs/sad/TuHaiKahan.mp3" , image:"./imgs/sad/Kahan.jpg" ,duration:"3:04",video:"./videos/sad/TuHaiKahan.mp4" ,videoImage:"./imgs/sad/Kahan.jpg"},
+   {songName:"Kahani Suno", url:"./Songs/sad/KahaniSuno.mp3" , image:"./imgs/sad/KahaniSuno.jpg" ,duration:"3:04",video:"./videos/sad/KahaniSuno.mp4" ,videoImage:"./imgs/sad/KahaniSuno.jpg"},
    {songName:"Falak Tu Garaj Tu", url:"./Songs/Falak Tu Garaj Tu.mp3" , image:"./imgs/kgf2.png" ,duration:"4:37",video:"./videos/Falak Tu Garaj Tu.mp4" , videoImage:"./imgs/kgf2.png"},
+   {songName:"Kaash Aisa Hota",url:"./Songs/Kaash1.mp3" , image:"./imgs/kaash.png",duration:"3:32" , video:"./videos/Kaash Aisa Hota.mp4"},
+
+   // {songName:"Tere Naal",url:"./Songs/TereNaal.mp3" , image:"./imgs/naal.png",duration:"3:18"},
+   // {songName:"Kalavathi",url:"./Songs/Kalavathi.mp3" , image:"./imgs/kalavathi.png",duration:"4:14"},  
+   // {songName:"Main Raat Din Dua Karu",url:"./Songs/RaatDinDuaKaru.mp3" , image:"./imgs/raatDin.png",duration:"4:23"},
+    // {songName:"Udd Jaa Kaale Kaava",url:"./Songs/UddJaaKaaleKaava.mp3" , image:"./imgs/heart1.jpg",duration:"3:24"},
+
+   
+   //Romantic
+   {songName:"Dil Diyan Gallan", url:"./Songs/Romantic/DilDiyanGallan.mp3" , image:"./imgs/romantic/gallan.jpg" ,duration:"3:04",video:"./videos/Romantic/DilDiyanGallan.mp4" ,videoImage:"./imgs/romantic/gallan.jpg"},
+   {songName:"Dil Meri Na Sune ", url:"./Songs/Romantic/DilMeriNaSune.mp3" , image:"./imgs/romantic/Genius.jpg" ,duration:"4:21",video:"./videos/Romantic/DilMeriNaSune.mp4" ,videoImage:"./imgs/romantic/Genius.jpg"},
+   {songName:"Kesariya", url:"./Songs/Romantic/Kesariya.mp3" , image:"./imgs/romantic/Kesariya.jpg" ,duration:"4:21",video:"./videos/Romantic/Kesariya.mp4" ,videoImage:"./imgs/romantic/Kesariya.jpg"},
+   {songName:"Meri Aashiqui", url:"./Songs/Romantic/MeriAashiqui.mp3" , image:"./imgs/romantic/MeriAashiqui.jpg" ,duration:"5:07",video:"./videos/Romantic/MeriAashiqu.mp4" ,videoImage:"./imgs/romantic/MeriAashiqui.jpg"},
+   {songName:"Pal", url:"./Songs/Romantic/Pal.mp3" , image:"./imgs/romantic/pal.jpg" ,duration:"4:55",video:"./videos/Romantic/Pal.mp4" ,videoImage:"./imgs/romantic/pal.jpg"},
+   {songName:"Soch Liya", url:"./Songs/Romantic/SochLiya.mp3" , image:"./imgs/romantic/soch.jpg" ,duration:"3:34",video:"./videos/Romantic/SochLiya.mp4" ,videoImage:"./imgs/romantic/soch.jpg"},
+   {songName:"Tera Fitoor", url:"./Songs/Romantic/TeraFitoor.mp3" , image:"./imgs/romantic/Genius.jpg" ,duration:"3:34",video:"./videos/Romantic/TeraFitoor.mp4" ,videoImage:"./imgs/romantic/Genius.jpg"},
+   {songName:"Raatan Lambiyan",url:"./Songs/RaatanLambiyan.mp3" , image:"./imgs/raatan.png",duration:"3:50", video:"./videos/Raataan Lambiyan.mp4"},
+   {songName:"Dil Jhoom",url:"./Songs/Jhoom.mp3" , image:"./imgs/jhoom.png",duration:"5:00", video:"./videos/Dil Jhoom.mp4"},
+   {songName:"Apna Bna Le",url:"./Songs/Apna.mp3" , image:"./imgs/apena.png" ,duration:"3:24", video:"./videos/Apna Bana Le.mp4"},
+   {songName:"Malang",url:"./Songs/Malang.mp3" , image:"./imgs/malang.png",duration:"4:47", video:"./videos/Malang.mp4"},
+   {songName:"Marham",url:"./Songs/Marham.mp3" , image:"./imgs/marham.jpg" ,duration:"1:53", video:"./videos/Marham.mp4"},
+
+   // {songName:"Tere Pyar Mein",url:"./Songs/Tere_Pyar1.mp3" , image:"./imgs/pyarMain.png",duration:"2:57"},
+// {songName:"Hua Main", url:"./Songs/HuaMain.mp3" , image:"./imgs/huaMain.jpg" ,duration:"4:37",video:"./videos/Pehle Bhi Main.mp4" , videoImage:"./imgs/trans.png"},
+// {songName:"Khwab",url:"./Songs/Khwab1.mp3" , image:"./imgs/khwab.png",duration:"2:38" , video:"./videos/vid5.mp4"},
+
+   
+   // Rock
+   {songName:"Ud daa Punjab", url:"./Songs/Rock/UddaaPunjab.mp3" , image:"./imgs/Rock/urda.jpg" ,duration:"5:12",video:"./videos/Rock/UdDaaPunjab.mp4" ,videoImage:"./imgs/Rock/urda.jpg"},
+   {songName:"Sadda Haq", url:"./Songs/Rock/SaddaHaq.mp3" , image:"./imgs/Rock/haq.jpg" ,duration:"2:03",video:"./videos/Rock/SaddaHaq.mp4" ,videoImage:"./imgs/Rock/haq.jpg"},
+   {songName:"Jaadugar", url:"./Songs/Rock/Jaadugar.mp3" , image:"./imgs/Rock/Jaadugar.png" ,duration:"3:12",video:"./videos/Rock/Jaadugar.mp4" ,videoImage:"./imgs/Rock/Jaadugar.png"},
+   {songName:"Bulleya", url:"./Songs/Bulleya.mp3" , image:"./imgs/bulleya.jpg" ,duration:"4:37",video:"./videos/Bulleya.mp4" , videoImage:"./imgs/bulleya.jpg"},
+   {songName:"Chhote Chhote Peg", url:"./Songs/Chhote Chhote Peg.mp3" , image:"./imgs/peg.jpg" ,duration:"4:37",video:"./videos/Chhote Chhote Peg.mp4" , videoImage:"./imgs/peg.jpg"},
+   {songName:"Thank You God", url:"./Songs/Thank You God.mp3" , image:"./imgs/god.jpg" ,duration:"4:37",video:"./videos/Thank You God.mp4" , videoImage:"./imgs/god.jpg"},
+   {songName:"Kar Har Maidaan Fateh", url:"./Songs/KAR HAR MAIDAAN FATEH.mp3" , image:"./imgs/sanju.jpg" ,duration:"4:37",video:"./videos/KAR HAR MAIDAAN FATEH.mp4" , videoImage:"./imgs/sanju.jpg"},
+    {songName:"Udta Parinda", url:"./Songs/Udta Parinda.mp3" , image:"./imgs/Udta_Parinda.jpg" ,duration:"4:37",video:"./videos/Udta Parinda.mp4" , videoImage:"./imgs/trans.png"},
+   {songName:"Naina Da Kya Kasoor",url:"./Songs/NainaDaKyaKasoor.mp3" , image:"./imgs/nainaDa.png",duration:"3:48", video:"./videos/Naina Da Kya Kasoor.mp4"},
+   {songName:"Aarzoo",url:"./Songs/Aarzoo.mp3" , image:"./imgs/Aarzoo.png",duration:"3:24", video:"./videos/Aarzoo - One - Take Music Video _ @IqlipseNova.mp4", videoImage:"./imgs/trans.png"},
+ 
+
+/*
+{songName:"Badan Pe Sitare", url:"./Songs/Rock/BadanPeSitare.mp3" , image:"./imgs/Rock/badan.png" ,duration:"3:58",video:"./videos/Rock/BadanPeSitare.mp4" ,videoImage:"./imgs/Rock/badan.png"},
+{songName:"Dariya", url:"./Songs/Rock/Dariya.mp3" , image:"./imgs/Rock/dariya.png" ,duration:"3:38",video:"./videos/Rock/Dariya.mp4" ,videoImage:"./imgs/Rock/Dariya.png"},
+{songName:"Tum Hi Ho Bandhu", url:"./Songs/Rock/TumHiHoBandhu.mp3" , image:"./imgs/Rock/bandhu.png" ,duration:"4:42",video:"./videos/Rock/TumHiHoBandhu.mp4" ,videoImage:"./imgs/Rock/bandhu.png"},
+{songName:"DoDin", url:"./Songs/Rock/DoDin.mp3" , image:"./imgs/Rock/dodin.png" ,duration:"2:58",video:"./videos/Rock/DoDin.mp4" ,videoImage:"./imgs/Rock/DoDin.png"},
+{songName:"Haareya Meri Pyaari", url:"./Songs/Rock/HaareyaMeriPyaari.mp3" , image:"./imgs/Rock/haareya.png" ,duration:"3:34",video:"./videos/Rock/HaareyaMeriPyaari.mp4" ,videoImage:"./imgs/Rock/haareya.png"},
+{songName:"Saara India", url:"./Songs/Rock/SaaraIndia.mp3" , image:"./imgs/Rock/india.png" ,duration:"2:42",video:"./videos/Rock/SaaraIndia.mp4" ,videoImage:"./imgs/Rock/india.png"},
+{songName:"Mere Liye Tum Kaafi Ho", url:"./Songs/Rock/MereLiyeTumKaafiHo .mp3" , image:"./imgs/Rock/kaafiho.png" ,duration:"2:12",video:"./videos/Rock/MereLiyeTumKaafiHo.mp4" ,videoImage:"./imgs/Rock/kaafiho.png"},
+{songName:"Kudiye Ni Teri", url:"./Songs/Rock/KudiyeNiTeri.mp3" , image:"./imgs/Rock/kudiya.png" ,duration:"3:39",video:"./videos/Rock/KudiyeNiTeri.mp4" ,videoImage:"./imgs/Rock/Kudiya.png"},
+{songName:"La La La", url:"./Songs/Rock/LaLaLa.mp3" , image:"./imgs/Rock/lalala.png" ,duration:"2:41",video:"./videos/Rock/LaLaLa.mp4" ,videoImage:"./imgs/Rock/lalala.png"},
+{songName:"Menu Lehenga Lede Mehnga", url:"./Songs/Rock/MenuLehengaLedeMehnga.mp3" , image:"./imgs/Rock/lehenga.png" ,duration:"3:35",video:"./videos/Rock/MenuLehengaLedeMehnga.mp4" ,videoImage:"./imgs/Rock/lehenga.png"},
+{songName:"Long Drive Pe", url:"./Songs/Rock/LongDrivePe.mp3" , image:"./imgs/Rock/long.png" ,duration:"2:32",video:"./videos/Rock/LongDrivePe.mp4" ,videoImage:"./imgs/Rock/long.png"},
+{songName:"Mother's-Lullaby", url:"./Songs/Rock/Mother's-Lullaby.mp3" , image:"./imgs/Rock/mother.png" ,duration:"00:42",video:"./videos/Rock/Mother's-Lullaby.mp4" ,videoImage:"./imgs/Rock/mother.png"},
+{songName:"Naah", url:"./Songs/Rock/Naah.mp3" , image:"./imgs/Rock/naah.png" ,duration:"3:09",video:"./videos/Rock/Naah.mp4" ,videoImage:"./imgs/Rock/naah.png"},
+{songName:"Najaa", url:"./Songs/Rock/Najaa.mp3" , image:"./imgs/Rock/najaa.png" ,duration:"3:11",video:"./videos/Rock/Najaa.mp4" ,videoImage:"./imgs/Rock/najaa.png"},
+{songName:"Ruka Hoon", url:"./Songs/Rock/RukaHoon.mp3" , image:"./imgs/Rock/ruka.png" ,duration:"2:48",video:"./videos/Rock/RukaHoon.mp4" ,videoImage:"./imgs/Rock/ruka.png"},
+{songName:"Malang Sajna", url:"./Songs/Rock/MalangSajna.mp3" , image:"./imgs/Rock/sajna.png" ,duration:"2:33",video:"./videos/Rock/MalangSajna.mp4" ,videoImage:"./imgs/Rock/sajna.png"},
+{songName:"Tu Meri", url:"./Songs/Rock/TuMeri.mp3" , image:"./imgs/Rock/tuMeri.png" ,duration:"4:17",video:"./videos/Rock/TuMeri.mp4" ,videoImage:"./imgs/Rock/tuMeri.png"},
+{songName:"Matargashti", url:"./Songs/Rock/Matargashti.mp3" , image:"./imgs/Rock/gashti.png" ,duration:"5:28",video:"./videos/Rock/Matargashti.mp4" ,videoImage:"./imgs/Rock/gashti.png"},
+{songName:"Ok Jaanu",url:"./Songs/okJaanu1.mp3" , image:"./imgs/okJaanu.png",duration:"3:25"},
+
+*/
+// {songName:" ", url:"./Songs/Rock/ .mp3" , image:"./imgs/Rock/ .png" ,duration:":",video:"./videos/Rock/ .mp4" ,videoImage:"./imgs/Rock/ .png"},
+
+ 
+   // {songName:"Haaye Oye",url:"./Songs/HaayeOye.mp3" , image:"./imgs/oye.png",duration:"3:20" , video:"./videos/hi.mp4"},
+   // {songName:"Haareya Meri Pyaari Bindu",url:"./Songs/HaareyaMeriPyaariBindu.mp3" , image:"./imgs/heeriye.png" ,duration:"3:34", video:"./videos/vid7.mp4"},
+ 
      
 ];
 
@@ -433,26 +495,30 @@ function functionofgsap(){
 
 
 function LoginPage(){
-   var loginPage = document.querySelector(".Video-Fist-Page");
+   // var loginPage = document.querySelector(".Video-Fist-Page");
    var mobileviewPage = document.querySelector(".mobileView")
    var App_Contaner = document.querySelector(".App_Contaner");
-   var albumPage = document.querySelector("#albumPage")
+   // var albumPage = document.querySelector("#albumPage");
    var uname = document.querySelector("#Uname");
    var pass = document.querySelector("#pass");
    var btns = document.querySelector("#btn");
-    
 
+         
+   pass.addEventListener("input", function(){
+            document.querySelector(".bottom-view").style.display="flex";
+
+   })
    btns.addEventListener("click", function(){
-     
          if(uname.value == "" || pass.value == ""){
             alert("Sorry, you can't go forward please provide details.")
-            
             return false;
          }
          else{
-            loginPage.style.display="none";
-            mobileviewPage.style.display="flex";
-            // App_Contaner.style.display="flex";
+ 
+            // document.querySelector(".bottom-view").style.display="flex";
+            // loginPage.style.display="none";
+            mobileviewPage.style.display="none";
+            App_Contaner.style.display="flex";
             // albumPage.style.display="none";
          }
    })
@@ -631,7 +697,7 @@ var a= document.querySelector(".bodyCover");
 
 var clutte=""
 arr4.forEach(function(obj, index){
-   clutte=clutte+ `<div class="card-Contaner">
+   clutte=clutte+ `<div class="card-Contaner"id="${obj.id}">
    <div class="top-Img-contaner">
        <div class="image-contaner">
             <img src="${obj.im}" alt="">
@@ -643,12 +709,12 @@ arr4.forEach(function(obj, index){
        </div>
    </div>
 
-   <div class="bottom-play-contaner">
-       <div class="play-circle-btn" id="${obj.id}">Enter</div>
-   </div>
+   
 </div>`
 })
-
+//  <div class="bottom-play-contaner">
+//        <div class="play-circle-btn" id="${obj.id}">Enter</div>
+//    </div> 
 console.log(clutte +' print me');
 a.innerHTML=clutte;
 var imgContaner = document.querySelector(".top-Img-contaner");
@@ -837,11 +903,28 @@ function catogary(){
       var arr=[
          // {link:"https://drive.google.com/file/d/1Nnnn-zcxJ6pEPO7AOIx83C1asptJQhwX/view?usp=drive_link", songName:"God", url:"./Songs/Apna.mp3"},
         
-   
+     //Romantic
+     {songName:"Dil Diyan Gallan", url:"./Songs/Romantic/DilDiyanGallan.mp3" , image:"./imgs/romantic/gallan.jpg" ,duration:"3:04",video:"./videos/Romantic/DilDiyanGallan.mp4" ,videoImage:"./imgs/romantic/gallan.jpg"},
+     {songName:"Dil Meri Na Sune ", url:"./Songs/Romantic/DilMeriNaSune.mp3" , image:"./imgs/romantic/Genius.jpg" ,duration:"4:21",video:"./videos/Romantic/DilMeriNaSune.mp4" ,videoImage:"./imgs/romantic/Genius.jpg"},
+     {songName:"Kesariya", url:"./Songs/Romantic/Kesariya.mp3" , image:"./imgs/romantic/Kesariya.jpg" ,duration:"4:21",video:"./videos/Romantic/Kesariya.mp4" ,videoImage:"./imgs/romantic/Kesariya.jpg"},
+     {songName:"Meri Aashiqui", url:"./Songs/Romantic/MeriAashiqui.mp3" , image:"./imgs/romantic/MeriAashiqui.jpg" ,duration:"5:07",video:"./videos/Romantic/MeriAashiqu.mp4" ,videoImage:"./imgs/romantic/MeriAashiqui.jpg"},
+     {songName:"Pal", url:"./Songs/Romantic/Pal.mp3" , image:"./imgs/romantic/pal.jpg" ,duration:"4:55",video:"./videos/Romantic/Pal.mp4" ,videoImage:"./imgs/romantic/pal.jpg"},
+     {songName:"Soch Liya", url:"./Songs/Romantic/SochLiya.mp3" , image:"./imgs/romantic/soch.jpg" ,duration:"3:34",video:"./videos/Romantic/SochLiya.mp4" ,videoImage:"./imgs/romantic/soch.jpg"},
+     {songName:"Tera Fitoor", url:"./Songs/Romantic/TeraFitoor.mp3" , image:"./imgs/romantic/Genius.jpg" ,duration:"3:34",video:"./videos/Romantic/TeraFitoor.mp4" ,videoImage:"./imgs/romantic/Genius.jpg"},
+     {songName:"Raatan Lambiyan",url:"./Songs/RaatanLambiyan.mp3" , image:"./imgs/raatan.png",duration:"3:50", video:"./videos/Raataan Lambiyan.mp4"},
+     {songName:"Dil Jhoom",url:"./Songs/Jhoom.mp3" , image:"./imgs/jhoom.png",duration:"5:00", video:"./videos/Dil Jhoom.mp4"},
+     {songName:"Apna Bna Le",url:"./Songs/Apna.mp3" , image:"./imgs/apena.png" ,duration:"3:24", video:"./videos/Apna Bana Le.mp4"},
+     {songName:"Malang",url:"./Songs/Malang.mp3" , image:"./imgs/malang.png",duration:"4:47", video:"./videos/Malang.mp4"},
+     {songName:"Marham",url:"./Songs/Marham.mp3" , image:"./imgs/marham.jpg" ,duration:"1:53", video:"./videos/Marham.mp4"},
+     {songName:"Tere Pyar Mein",url:"./Songs/Tere_Pyar1.mp3" , image:"./imgs/pyarMain.png",duration:"2:57"},
+     {songName:"Hua Main", url:"./Songs/HuaMain.mp3" , image:"./imgs/huaMain.jpg" ,duration:"4:37",video:"./videos/Pehle Bhi Main.mp4" , videoImage:"./imgs/trans.png"},
+     {songName:"Khwab",url:"./Songs/Khwab1.mp3" , image:"./imgs/khwab.png",duration:"2:38" , video:"./videos/vid5.mp4"},
+  
+     
       ]
       var a= ""
    
-   arr2.forEach(function(obj, index){
+   arr.forEach(function(obj, index){
    
          a=a +`<div class="Singlesong-contaner" id=${index}>
          <div class="LEFT">
@@ -866,8 +949,8 @@ function catogary(){
       // console.log(obj.songName);
    document.querySelector("#top-sonts-contaner").innerHTML=a;
    console.log(a);
-   audio.src = arr2[selectedSong].url
-    document.querySelector(".left-album-contaner").innerHTML=` <img src="${arr2[selectedSong].image}" alt="">`
+   audio.src = arr[selectedSong].url
+    document.querySelector(".left-album-contaner").innerHTML=` <img src="${arr[selectedSong].image}" alt="">`
     
    }
 albumSongsPage();
@@ -906,6 +989,8 @@ albumSongsPage();
          selectedSong++
          albumSongsPage();
          audio.play()
+         document.querySelector(".pause-play-btnOne").innerHTML=`<h2>Play</h2>`
+
          document.querySelector(".left-backwordOne").style.opacity=1
         }else{
          document.querySelector(".right-forwordOne").style.opacity=0.3
@@ -917,6 +1002,8 @@ albumSongsPage();
       if(selectedSong>0){
          selectedSong--
          albumSongsPage();
+         document.querySelector(".pause-play-btnOne").innerHTML=`<h2>Play</h2>`
+
          audio.play()
          document.querySelector(".right-forwordOne").style.opacity=1
         }else{
@@ -1003,6 +1090,8 @@ document.querySelector(".right-forwordTwo")
       if(selectedSong <arr.length-1){
          selectedSong++
          inside();
+         document.querySelector(".pause-play-btnTwo").innerHTML=`<h2>Play</h2>`
+
          audio.play();
          document.querySelector(".left-backwordTwo").style.opacity=1
         }else{
@@ -1015,6 +1104,8 @@ document.querySelector(".right-forwordTwo")
       if(selectedSong>0){
          selectedSong--
          inside();
+         document.querySelector(".pause-play-btnTwo").innerHTML=`<h2>Play</h2>`
+
          audio.play();
          document.querySelector(".right-forwordTwo").style.opacity=1
         }else{
@@ -1029,10 +1120,39 @@ catogaryTwo()
 function catogaryThree(){
     
    var arr= [
-      {songName:"Chhote Chhote Peg", url:"./Songs/Chhote Chhote Peg.mp3" , image:"./imgs/peg.jpg" ,duration:"4:37",video:"./videos/Chhote Chhote Peg.mp4" , videoImage:"./imgs/peg.jpg"},
-      {songName:"Kar Har Maidaan Fateh", url:"./Songs/KAR HAR MAIDAAN FATEH.mp3" , image:"./imgs/sanju.jpg" ,duration:"4:37",video:"./videos/KAR HAR MAIDAAN FATEH.mp4" , videoImage:"./imgs/sanju.jpg"},
-      {songName:"Bulleya", url:"./Songs/Bulleya.mp3" , image:"./imgs/bulleya.jpg" ,duration:"4:37",video:"./videos/Bulleya.mp4" , videoImage:"./imgs/bulleya.jpg"},
-    
+      // Rock
+    {songName:"Ud daa Punjab", url:"./Songs/Rock/UddaaPunjab.mp3" , image:"./imgs/Rock/urda.jpg" ,duration:"5:12",video:"./videos/Rock/UdDaaPunjab.mp4" ,videoImage:"./imgs/Rock/urda.jpg"},
+   {songName:"Sadda Haq", url:"./Songs/Rock/SaddaHaq.mp3" , image:"./imgs/Rock/haq.jpg" ,duration:"2:03",video:"./videos/Rock/SaddaHaq.mp4" ,videoImage:"./imgs/Rock/haq.jpg"},
+   {songName:"Jaadugar", url:"./Songs/Rock/Jaadugar.mp3" , image:"./imgs/Rock/Jaadugar.png" ,duration:"3:12",video:"./videos/Rock/Jaadugar.mp4" ,videoImage:"./imgs/Rock/Jaadugar.png"},
+   {songName:"Bulleya", url:"./Songs/Bulleya.mp3" , image:"./imgs/bulleya.jpg" ,duration:"4:37",video:"./videos/Bulleya.mp4" , videoImage:"./imgs/bulleya.jpg"},
+   {songName:"Chhote Chhote Peg", url:"./Songs/Chhote Chhote Peg.mp3" , image:"./imgs/peg.jpg" ,duration:"4:37",video:"./videos/Chhote Chhote Peg.mp4" , videoImage:"./imgs/peg.jpg"},
+   {songName:"Thank You God", url:"./Songs/Thank You God.mp3" , image:"./imgs/god.jpg" ,duration:"4:37",video:"./videos/Thank You God.mp4" , videoImage:"./imgs/god.jpg"},
+   {songName:"Kar Har Maidaan Fateh", url:"./Songs/KAR HAR MAIDAAN FATEH.mp3" , image:"./imgs/sanju.jpg" ,duration:"4:37",video:"./videos/KAR HAR MAIDAAN FATEH.mp4" , videoImage:"./imgs/sanju.jpg"},
+    {songName:"Udta Parinda", url:"./Songs/Udta Parinda.mp3" , image:"./imgs/Udta_Parinda.jpg" ,duration:"4:37",video:"./videos/Udta Parinda.mp4" , videoImage:"./imgs/trans.png"},
+   {songName:"Naina Da Kya Kasoor",url:"./Songs/NainaDaKyaKasoor.mp3" , image:"./imgs/nainaDa.png",duration:"3:48", video:"./videos/Naina Da Kya Kasoor.mp4"},
+   {songName:"Aarzoo",url:"./Songs/Aarzoo.mp3" , image:"./imgs/Aarzoo.png",duration:"3:24", video:"./videos/Aarzoo - One - Take Music Video _ @IqlipseNova.mp4", videoImage:"./imgs/trans.png"},
+   {songName:"Badan Pe Sitare", url:"./Songs/Rock/BadanPeSitare.mp3" , image:"./imgs/Rock/badan.png" ,duration:"3:58",video:"./videos/Rock/BadanPeSitare.mp4" ,videoImage:"./imgs/Rock/badan.png"},
+   {songName:"Dariya", url:"./Songs/Rock/Dariya.mp3" , image:"./imgs/Rock/dariya.png" ,duration:"3:38",video:"./videos/Rock/Dariya.mp4" ,videoImage:"./imgs/Rock/Dariya.png"},
+   {songName:"Tum Hi Ho Bandhu", url:"./Songs/Rock/TumHiHoBandhu.mp3" , image:"./imgs/Rock/bandhu.png" ,duration:"4:42",video:"./videos/Rock/TumHiHoBandhu.mp4" ,videoImage:"./imgs/Rock/bandhu.png"},
+   {songName:"DoDin", url:"./Songs/Rock/DoDin.mp3" , image:"./imgs/Rock/dodin.png" ,duration:"2:58",video:"./videos/Rock/DoDin.mp4" ,videoImage:"./imgs/Rock/DoDin.png"},
+   {songName:"Haareya Meri Pyaari", url:"./Songs/Rock/HaareyaMeriPyaari.mp3" , image:"./imgs/Rock/haareya.png" ,duration:"3:34",video:"./videos/Rock/HaareyaMeriPyaari.mp4" ,videoImage:"./imgs/Rock/haareya.png"},
+   {songName:"Saara India", url:"./Songs/Rock/SaaraIndia.mp3" , image:"./imgs/Rock/india.png" ,duration:"2:42",video:"./videos/Rock/SaaraIndia.mp4" ,videoImage:"./imgs/Rock/india.png"},
+   {songName:"Mere Liye Tum Kaafi Ho", url:"./Songs/Rock/MereLiyeTumKaafiHo .mp3" , image:"./imgs/Rock/kaafiho.png" ,duration:"2:12",video:"./videos/Rock/MereLiyeTumKaafiHo.mp4" ,videoImage:"./imgs/Rock/kaafiho.png"},
+   {songName:"Kudiye Ni Teri", url:"./Songs/Rock/KudiyeNiTeri.mp3" , image:"./imgs/Rock/kudiya.png" ,duration:"3:39",video:"./videos/Rock/KudiyeNiTeri.mp4" ,videoImage:"./imgs/Rock/Kudiya.png"},
+   {songName:"La La La", url:"./Songs/Rock/LaLaLa.mp3" , image:"./imgs/Rock/lalala.png" ,duration:"2:41",video:"./videos/Rock/LaLaLa.mp4" ,videoImage:"./imgs/Rock/lalala.png"},
+   {songName:"Menu Lehenga Lede Mehnga", url:"./Songs/Rock/MenuLehengaLedeMehnga.mp3" , image:"./imgs/Rock/lehenga.png" ,duration:"3:35",video:"./videos/Rock/MenuLehengaLedeMehnga.mp4" ,videoImage:"./imgs/Rock/lehenga.png"},
+   {songName:"Long Drive Pe", url:"./Songs/Rock/LongDrivePe.mp3" , image:"./imgs/Rock/long.png" ,duration:"2:32",video:"./videos/Rock/LongDrivePe.mp4" ,videoImage:"./imgs/Rock/long.png"},
+   {songName:"Mother's-Lullaby", url:"./Songs/Rock/Mother's-Lullaby.mp3" , image:"./imgs/Rock/mother.png" ,duration:"00:42",video:"./videos/Rock/Mother's-Lullaby.mp4" ,videoImage:"./imgs/Rock/mother.png"},
+   {songName:"Naah", url:"./Songs/Rock/Naah.mp3" , image:"./imgs/Rock/naah.png" ,duration:"3:09",video:"./videos/Rock/Naah.mp4" ,videoImage:"./imgs/Rock/naah.png"},
+   {songName:"Najaa", url:"./Songs/Rock/Najaa.mp3" , image:"./imgs/Rock/najaa.png" ,duration:"3:11",video:"./videos/Rock/Najaa.mp4" ,videoImage:"./imgs/Rock/najaa.png"},
+   {songName:"Ruka Hoon", url:"./Songs/Rock/RukaHoon.mp3" , image:"./imgs/Rock/ruka.png" ,duration:"2:48",video:"./videos/Rock/RukaHoon.mp4" ,videoImage:"./imgs/Rock/ruka.png"},
+   {songName:"Malang Sajna", url:"./Songs/Rock/MalangSajna.mp3" , image:"./imgs/Rock/sajna.png" ,duration:"2:33",video:"./videos/Rock/MalangSajna.mp4" ,videoImage:"./imgs/Rock/sajna.png"},
+   {songName:"Tu Meri", url:"./Songs/Rock/TuMeri.mp3" , image:"./imgs/Rock/tuMeri.png" ,duration:"4:17",video:"./videos/Rock/TuMeri.mp4" ,videoImage:"./imgs/Rock/tuMeri.png"},
+   {songName:"Matargashti", url:"./Songs/Rock/Matargashti.mp3" , image:"./imgs/Rock/gashti.png" ,duration:"5:28",video:"./videos/Rock/Matargashti.mp4" ,videoImage:"./imgs/Rock/gashti.png"},
+   {songName:"Ok Jaanu",url:"./Songs/okJaanu1.mp3" , image:"./imgs/okJaanu.png",duration:"3:25"},
+
+
+
    ] 
 
 function inside2(){
@@ -1102,6 +1222,8 @@ document.querySelector(".right-forwordThr")
       if(selectedSong <arr.length-1){
          selectedSong++
          inside2();
+         document.querySelector(".pause-play-btnThr").innerHTML=`<h2>Play</h2>`
+
          audio.play();
          document.querySelector(".left-backwordThr").style.opacity=1
         }else{
@@ -1114,6 +1236,8 @@ document.querySelector(".right-forwordThr")
       if(selectedSong>0){
          selectedSong--
          inside2();
+         document.querySelector(".pause-play-btnThr").innerHTML=`<h2>Play</h2>`
+
          audio.play();
          document.querySelector(".right-forwordThr").style.opacity=1
         }else{
@@ -1201,6 +1325,8 @@ document.querySelector(".right-forwordFour")
       if(selectedSong <arr.length-1){
          selectedSong++
          inside3();
+         document.querySelector(".pause-play-btnFour").innerHTML=`<h2>Play</h2>`
+
          audio.play();
          document.querySelector(".left-backwordFour").style.opacity=1
         }else{
@@ -1213,6 +1339,8 @@ document.querySelector(".right-forwordFour")
       if(selectedSong>0){
          selectedSong--
          inside3();
+         document.querySelector(".pause-play-btnFour").innerHTML=`<h2>Play</h2>`
+
          audio.play();
          document.querySelector(".right-forwordFour").style.opacity=1
         }else{
@@ -1227,10 +1355,12 @@ catogaryFour()
 function catogaryFive(){
     
    var arr= [
-      {songName:"Chhote Chhote Peg", url:"./Songs/Chhote Chhote Peg.mp3" , image:"./imgs/peg.jpg" ,duration:"4:37",video:"./videos/Chhote Chhote Peg.mp4" , videoImage:"./imgs/peg.jpg"},
+      {songName:"BRODYAGA FUNK ", url:"./Songs/relex/BRODYAGAFUNK.mp3" , image:"./imgs/relex/BRODYAGAFUNK.jpg " ,duration:"2:15",video:"./videos/relex/BRODYAGAFUNK.mp4" , videoImage:"./imgs/relex/BRODYAGAFUNK.jpg "},
       
-      {songName:"Bulleya", url:"./Songs/Bulleya.mp3" , image:"./imgs/bulleya.jpg" ,duration:"4:37",video:"./videos/Bulleya.mp4" , videoImage:"./imgs/bulleya.jpg"},
-      {songName:"Kar Har Maidaan Fateh", url:"./Songs/KAR HAR MAIDAAN FATEH.mp3" , image:"./imgs/sanju.jpg" ,duration:"4:37",video:"./videos/KAR HAR MAIDAAN FATEH.mp4" , videoImage:"./imgs/sanju.jpg"},
+      // {songName:"HamariAdhuri Kahani", url:"./Songs/relex/HamariAdhuriKahani.mp3" , image:"./imgs/relex/HamariAdhuriKahani.jpg" ,duration:"3:28",video:"./videos/relex/HamariAdhuriKahani.mp4" , videoImage:"./imgs/relex/HamariAdhuriKahani.jpg"},
+      {songName:"MASHAULTRA FUNK", url:"./Songs/relex/MASHAULTRAFUNK.mp3" , image:"./imgs/relex/MASHAULTRAFUNK.jpg" ,duration:"0:10",video:"./videos/relex/MASHAULTRAFUNK.mp4" , videoImage:"./imgs/relex/MASHAULTRAFUNK.jpg"},
+
+      // {songName:"Kar Har Maidaan Fateh", url:"./Songs/KAR HAR MAIDAAN FATEH.mp3" , image:"./imgs/sanju.jpg" ,duration:"4:37",video:"./videos/KAR HAR MAIDAAN FATEH.mp4" , videoImage:"./imgs/sanju.jpg"},
      
    ] 
 
@@ -1301,6 +1431,8 @@ document.querySelector(".right-forwordFive")
       if(selectedSong <arr.length-1){
          selectedSong++
          inside4();
+         document.querySelector(".pause-play-btnFive").innerHTML=`<h2>Play</h2>`
+
          audio.play();
          document.querySelector(".left-backwordFive").style.opacity=1
         }else{
@@ -1313,6 +1445,8 @@ document.querySelector(".right-forwordFive")
       if(selectedSong>0){
          selectedSong--
          inside4();
+         document.querySelector(".pause-play-btnFive").innerHTML=`<h2>Play</h2>`
+
          audio.play();
          document.querySelector(".right-forwordFive").style.opacity=1
         }else{
@@ -1327,12 +1461,21 @@ catogaryFive();
 function catogarySix(){
     
    var arr= [
-      {songName:"Kar Har Maidaan Fateh", url:"./Songs/KAR HAR MAIDAAN FATEH.mp3" , image:"./imgs/sanju.jpg" ,duration:"4:37",video:"./videos/KAR HAR MAIDAAN FATEH.mp4" , videoImage:"./imgs/sanju.jpg"},
-     
-      {songName:"Chhote Chhote Peg", url:"./Songs/Chhote Chhote Peg.mp3" , image:"./imgs/peg.jpg" ,duration:"4:37",video:"./videos/Chhote Chhote Peg.mp4" , videoImage:"./imgs/peg.jpg"},
-      
-      {songName:"Bulleya", url:"./Songs/Bulleya.mp3" , image:"./imgs/bulleya.jpg" ,duration:"4:37",video:"./videos/Bulleya.mp4" , videoImage:"./imgs/bulleya.jpg"},
-      
+      //english
+   {songName:"Alan Walker & AvaMax Alone", url:"./Songs/English/AlanWalker&AvaMaxAlone.mp3" , image:"./imgs/English/alan.png" ,duration:"4:06",video:"./videos/English/AlanWalker&AvaMaxAlone.mp4" ,videoImage:"./imgs/English/alan.png"},
+   {songName:"DDU DU DDU DU", url:"./Songs/English/DDU-DU-DDU-DU.mp3" , image:"./imgs/English/ddu.png" ,duration:"3:35",video:"./videos/English/DDU-DU-DDU-DU.mp4" ,videoImage:"./imgs/English/ddu.png"},
+   {songName:"The FatRat & RIELL", url:"./Songs/English/TheFatRat&RIELL.mp3" , image:"./imgs/English/fatrat.png" ,duration:"3:32",video:"./videos/English/TheFatRat&RIELL.mp4" ,videoImage:"./imgs/English/fatrat.png"},
+   {songName:"FIFTYFIFTY-Cupid", url:"./Songs/English/FIFTYFIFTYCupid.mp3" , image:"./imgs/English/fifty.png" ,duration:"2:53",video:"./videos/English/FIFTYFIFTYCupid.mp4" ,videoImage:"./imgs/English/fifty.png"},
+   {songName:"How You Like That", url:"./Songs/English/HowYouLikeThat.mp3" , image:"./imgs/English/how.png" ,duration:"3:03",video:"./videos/English/HowYouLikeThat.mp4" ,videoImage:"./imgs/English/how.png"},
+   {songName:"Luis Fonsi", url:"./Songs/English/LuisFonsi-DespacitoftDaddyYankee.mp3" , image:"./imgs/English/luis2.png" ,duration:"4:41",video:"./videos/English/LuisFonsi-DespacitoftDaddyYankee.mp4" ,videoImage:"./imgs/English/luis2.png"},
+   {songName:"See You Again", url:"./Songs/English/SeeYouAgainftCharliePuth.mp3" , image:"./imgs/English/see.png" ,duration:"3:57",video:"./videos/English/SeeYouAgainftCharliePuth.mp4" ,videoImage:"./imgs/English/see.png"},
+   {songName:"Shape of You", url:"./Songs/English/ShapeofYou.mp3" , image:"./imgs/English/shap.png" ,duration:"4:23",video:"./videos/English/ShapeofYou.mp4" ,videoImage:"./imgs/English/shap.png"},
+   {songName:"I Wanna Be Yours X Summer time Sadness", url:"./Songs/English/IWannaBeYoursXSummertimeSadness.mp3" , image:"./imgs/English/wanna.png" ,duration:"3:00",video:"./videos/English/IWannaBeYoursXSummertimeSadness.mp4" ,videoImage:"./imgs/English/wanna.png"},
+   //  {songName:"Lovely",url:"./Songs/Lovely.mp3" , image:"./imgs/lovely.png",duration:"3:20", video:"./videos/vid3.mp4"},
+
+   // {songName:" ", url:"./Songs/English/.mp3" , image:"./imgs/English/lovwMe.png" ,duration:":",video:"./videos/English/ .mp4" ,videoImage:"./imgs/English/loveMe.png"},
+
+
    ] 
 
 function inside5(){
@@ -1402,6 +1545,8 @@ document.querySelector(".right-forwordSix")
       if(selectedSong <arr.length-1){
          selectedSong++
          inside5();
+         document.querySelector(".pause-play-btnSix").innerHTML=`<h2>Play</h2>`
+
          audio.play();
          document.querySelector(".left-backwordSix").style.opacity=1
         }else{
@@ -1414,6 +1559,8 @@ document.querySelector(".right-forwordSix")
       if(selectedSong>0){
          selectedSong--
          inside5();
+         document.querySelector(".pause-play-btnSix").innerHTML=`<h2>Play</h2>`
+
          audio.play();
          document.querySelector(".right-forwordSix").style.opacity=1
         }else{
@@ -1566,3 +1713,26 @@ RequestSonge();
 
 
 // var flag=0
+
+
+function textAnimatiuon(){
+
+//   a =  gsap.timeline()
+   gsap.to(".right",{
+
+      x:30,
+      opacity:1,
+      duration:1,
+      delay:.6,
+   })
+   gsap.to(".left",{
+      x:-30,
+      duration:1,
+      opacity:1,
+      delay:.6,
+
+   })
+  
+
+}
+textAnimatiuon();
