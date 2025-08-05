@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+
+
+</head>
+<body>
+
+    <div class="center-box">
+  
+        <input type="text" placeholder="Name" id="fullName" required>
+
+         
+        <input type="mail" placeholder="abc@gmail.com"  id="email_id" required>
+
+        
+        <input type="text" placeholder="SongName" id="songName">
+
+       
+        <textarea   placeholder="message here..." id="message"></textarea>
+
+        <button onclick="SendMail()">Send</button>
+    </div>
+   
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <script>
+        function SendMail(){
+            var params ={
+               from_name: document.querySelector("#fullName").value,
+               email_id: document.querySelector("#email_id").value,
+               song_name: document.querySelector("#songName").value,
+               message: document.querySelector("#message").value,
+            }
+            
+            emailjs.send("service_6qpsm7s", "template_v8ydsxk", params).then(function(res){
+               alert("Request Successful" + res.status);
+            })
+         }
+
+         (function(){
+            emailjs.init("GWEhlwVuYwuqZBSuH");
+          })();
+    </script>
+ 
+<!-- <script type="text/javascript">
+(function(){
+  emailjs.init("GWEhlwVuYwuqZBSuH");
+})();
+</script> -->
+</body>
+</html>
